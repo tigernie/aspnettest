@@ -1,0 +1,55 @@
+﻿<dl class="box">
+    <dt id="titleBar"><b id="dataTitle"></b></dt>
+    <dd>
+        <form action="javascript:;" method="get" id="form" class="packageHead" style=" background-image:url(/images/packageHeader.gif);padding:10px; background-repeat:repeat-x;">
+            <table border="0" cellpadding="0" cellspacing="10" width="100%">
+                <tr>
+                    <td align="right" width="200"><label id="timeTitle"></label>：</td>
+                    <td width="200" colspan="2" style="text-align:left"><input type="text" id="openTime" name="openTime" value="" size="18" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'endTime\')}'})"/> --- <input type="text" name="endTime" id="endTime" value="" size="18" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',minDate:'#F{$dp.$D(\'openTime\')}'})"/>
+                    <button type="submit" class="submit" title="保存数据包开放时间">保存</button></td>
+                </tr>
+                <tr>
+                    <td id="packageStateNote" style="text-align:right"><a href="javascript:;" class="common" id="generate" title="为当前考试的所有考场生成各自的考务数据包">生成所有考务数据包</a></td>
+                    <td style="text-align:center">
+                    <a href="javascript:;"  class="common export" id="downloadAdmin" >下载所有考点管理员账号</a>
+                    </td>
+                    <td><a href="javascript:;" class="common export" id="downloadAllExamInfo">导出各考点考务信息</a>
+                    <a href="javascript:;" class="common export" id="downloadAllStartPassword">导出各考场开考密码</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><a href="javascript:;" class="common export" id="sendExamInfo">发送考点考务信息</a></td>
+                    <td style="text-align:center"><a href="javascript:;" class="common export" id="sendStudentsInfo">发送考生信息</a></td>
+                </tr>
+            </table>
+        </form>
+        <div id="isPackagePage" style="display:none"></div>
+<!--        <div class="s_left" id="s-tree"></div>--><br />
+            <table border="0" cellpadding="0" width="100%" cellspacing="0">
+                <tr>
+                    <td >
+                        考点所在区域：
+                        <select id="areasList" style="width:80px;">
+                            <option value="value">不限</option>
+                        </select>&nbsp;&nbsp;单位：
+                       <select id="schoolsList" style="width:120px;">
+                            <option value="value">不限</option>
+                        </select>&nbsp;&nbsp;
+                     考务包状态：
+                        <select id="packageState" style="width:80px;">
+                            <option value="0">不限</option>
+                        </select>
+                        &nbsp;&nbsp;
+                       考试开启状态：
+                        <select id="examOpenState" style="width:80px;">
+                            <option value="-1">不限</option>
+                            <option value="1">已开启</option>
+                            <option value="0">未开启</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table id="datalist" cellpadding="0" cellspacing="0" class="list" border="0">
+            </table>
+    </dd>
+</dl>
+<iframe id="iframe-download" name="iframe-download" style="display:none"></iframe>

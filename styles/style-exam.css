@@ -1,0 +1,97 @@
+* { margin:0; padding:0; }
+html { height: 100%; overflow: auto; _filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+body { margin: 0px; height:100%; background:rgb(63,137,171) url(../images/student.exam.bgh.jpg) repeat-x; }
+#body { background:url(../images/student.exam.bg.jpg) left top no-repeat;background-size:100%;}
+body,td,th { font-size: 14px; }
+img { border:none; vertical-align:middle }
+small { font-size:12px; }
+.round { background-color:white; }
+.xeslmmt { background-color:rgb(35,164,189); height:33px; font:14px/36px "黑体"; color: white; padding-left:20px }
+.info { background-color:#f6fcfd; margin-bottom:10px; padding:10px; }
+.info img { float:left; margin-right:10px }
+.info p { line-height:24px }
+
+#exName { left: 0px; top: 25px; color: rgb(14,107,146); font-family: 黑体; font-size: 34px; font-weight: bold; white-space: nowrap; position: absolute; }
+.uinfo { overflow: hidden; background-image: url(../images/uinfo-bg.png); position: absolute; height: 82px; width: 390px; left: 610px; top: 5px; display: none; }
+.uinfo.true { left: 740px; width: 260px; }
+.uinfo.true table { margin-left: -130px; width: 390px; }
+
+#types { list-style:none; overflow:hidden; clear:both;float:left;width:900px }
+#types li { margin:0 0 0; float:left; height:34px; width:99px; display:block; }
+#types li a { background:url(../images/cat-bg.png) top right no-repeat; display:block; text-align:center; margin:0 0 0 4px; color:#328b9e; text-decoration:none; line-height:24px; height:26px; padding:8px 0 0; font-size:14px; color:White; font-family:黑体; }
+#types li a span { display:none }
+#types li a.current { background-position:top left; font-weight:bold; }
+
+#starter { padding:20px; border:1px solid silver; border-radius:5px; }
+#starter div { line-height:1.5em; min-height:300px; margin:30px 0; }
+
+#typeshow span { font-size:12px; }
+#typehelp { color:gray; }
+#leftTime { color:green; font-weight:bold; font-size:16px; vertical-align:bottom }
+#tLeftTime { color:green; font-weight:bold; font-size:16px; vertical-align:bottom; /*border-bottom: 1px solid silver;*/ padding-bottom: 6px; margin-bottom: 6px; }
+/*#tLeftTime:before { content: '剩余时间：'; }*/
+
+#questions { margin:10px; overflow:hidden; background-color:white; padding-bottom:10px; zoom:1; }
+#questions li { float:left; width:23px; height:23px; margin:0; padding:10px 0 0 17px; list-style:none }
+#questions li a { display:block; width:22px; height:22px; padding:0; margin:0; text-align:center; line-height:22px; font-size:14px; color:#333333; text-decoration:none; background:url(../images/student.tm.status.jpg) left bottom no-repeat; }
+
+#question { margin:0 0; }
+#answer { margin:10px 0; padding:15px; border:1px solid #74e232; border-top-width:3px; background-color:#dff7d1; line-height:1.5em; }
+#answer label { margin: 0 12px 0 0; }
+#answer label input { padding:4px; }
+.file { background:url(../images/exam.attach.gif); height:26px; line-height:26px; margin:20px -14px -15px -15px; padding:5px 5px 4px 140px; color:darkgreen; }
+.file a { color:#0017a3 }
+form.file { background:url(../images/exam.answen.gif); }
+form.file.single { background:url(../images/exam.answen1.gif); }
+#answer input[type=file] { border:1px solid silver;height:26px;line-height:26px; width:400px; vertical-align:middle; border-radius:3px }
+#answer input[type=submit] { border:none;height:28px;width:78px;background:url(../images/btn.save.jpg); vertical-align:middle }
+
+.done { padding:0 10px 0 24px; height:22px; line-height:22px; background:url(../images/student.tm.status.jpg) left top no-repeat !important; color:white!important }
+.doing { padding:0 10px 0 24px; height:22px; line-height:22px; background:url(../images/student.tm.status.jpg) left center no-repeat !important; color:white!important }
+.submitting { padding:0 10px 0 24px; height:22px; line-height:22px; background:url(../images/loader.gif) center center no-repeat !important; color: #333333 !important; }
+.willdo { padding:0 10px 0 24px; height:22px; line-height:22px; background:url(../images/student.tm.status.jpg) left bottom no-repeat !important }
+
+#paper { border:1px solid silver; background-color:rgb(247,247,247) }
+
+#qlist table { background:#f6f6f6; border:1px solid #dbdbdb; width:100%; margin:10px 0; }
+#qlist table td { background:white; padding:15px }
+#qlist table th { padding:10px; text-align:left; }
+#qlist table th a { font-weight:normal; }
+#qlist table td b.index { position:absolute; width:30px; height:33px; padding:2px 0 0 5px; margin:-20px 0px 0px -20px; background:url("../images/xxx.png"); }
+
+.qbox { border:1px solid #dadada; width:473px; margin-top:10px; text-align:left; border-radius:4px }
+.qbox dt { padding:20px; line-height:1.5em; }
+.qbox dt img { max-width:432px; }
+.qbox dt var { background:url(../images/item.normal.png) left top no-repeat; position:absolute; z-index:0; width:32px; height:34px; padding:2px 0 0 4px; margin:-21px 0 0 -21px }
+.qbox dd { background: #f3f3f3; padding: 10px 20px; border-top: 1px solid #dadada; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; }
+.qbox dd label { margin-right:12px; cursor: pointer; display: inline-block; }
+.qbox dd label input { padding: 2px 18px 2px 2px; }
+.qbox.current { border-color:#fbbc40; }
+.qbox.current dt var { background-image:url(../images/item.current.png); color:white; }
+.qbox.current dd { background:#fef0d4; border-top-color:#ffdb95; }
+
+#nextprev { text-align:center;margin:10px; _padding-top:10px; *+padding-top:10px; }
+#pages { _vertical-align: bottom; }
+#nextprev { float: left; position: relative; left: 50%; top: 0; }
+#nextprev a { position: relative; right: 50%; float: left; }
+#nextprev span a { font-size:12px; font-family:宋体; margin:0 .4em .4em 0; color:#727272; height: 30px; line-height:32px; text-decoration:none; padding: 0 12px; background-image: url(../images/loadpage-bg.gif); border: 1px solid #bae7f9; border-radius: 4px; }
+#nextprev span a.current { color:#016893; border-color:#7ac8e9; background-image:url(../images/loadpage-bg-current.gif); }
+
+#biginfo { text-align: center; background: skyblue; font-size: 0px; padding: 5px 0; border-bottom: 1px solid red; display: none; }
+#biginfo label { padding: 0 10px; font-size: 30px; }
+#biginfo label b { color: red; }
+
+#ninfo { text-align: center; background-color: #ffdfdf; padding: 5px; border: 1px solid red; border-top: none; display: none; color: red; font-weight: bold; position: absolute; width: 600px; left: 50%; margin-left: -300px; top: 0; z-index: 9999; }
+
+#ocxLeft { margin-bottom: 5px; padding-bottom: 15px; /*border-bottom: 1px solid silver;*/ }
+/*#ocxLeft button { width: 100%; font-size: 14px; font-weight: bolder; padding: 5px 0 3px; }*/
+
+.ocxLeft { float: left; height: 580px; padding: 10px; background: #ececec; overflow: auto; }
+.ocxLeft.wide { width:280px; }
+.ocxLeft button { background: url(../images/save_and_submit_wide.jpg) no-repeat; border: none; width: 272px; height: 38px; cursor: pointer; }
+.ocxLeft.narrow { width:180px; }
+.ocxLeft.narrow button { background-image: url(../images/save_and_submit_narrow.jpg); width: 172px; }
+.ocxLeft fieldset { margin-top: 20px; padding-top: 8px; }
+.ocxLeft fieldset legend { margin-left: 10px; font-size: 14px; font-weight: bold; }
+.ocxLeft fieldset div { height: 460px; overflow: auto; padding: 0 8px; }
+.ocxLeft fieldset div p { line-height: 1.2em; margin-bottom: 0.5em; }

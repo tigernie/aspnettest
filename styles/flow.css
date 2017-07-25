@@ -1,0 +1,9 @@
+﻿span.normal {display:inline-block;width:150px;height:83px; background-image:url(/images/flow_gray.gif); }
+span.highlight { background-image: url(/images/flow_green.gif); }
+span.highlight .number { color:green; }
+span.arrow {display:inline-block; width:45px;height:21px; background-image: url(/images/flow_arrow.gif); margin:0 30px 25px 30px; }
+
+span.content { display:inline-block; color:white;font-size:20px; font-weight:bold; font-family:黑体;width:100%;text-align:center; }
+span.title { height:55px; line-height:55px;}
+span.number {height:40px;line-height:40px;margin-top:-15px;color:gray;}
+div.flowBox { margin-left:42px;margin-top:35px; }

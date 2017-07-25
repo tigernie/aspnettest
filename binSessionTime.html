@@ -1,0 +1,152 @@
+﻿<style>
+    .bind {
+    }
+
+        .bind td {
+            height: 30px;
+        }
+
+        .bind .title {
+            width: 100px;
+            text-align: right;
+        }
+</style>
+
+
+
+<table class="bind">
+    <tr>
+        <td class="title">选择考点(机位数)：</td>
+        <td><select id="examCentersSelector"></select></td>
+    </tr>
+    <tr>
+        <td class="title">分配考生人数：</td>
+        <td><input id="studentsCount" style="width:100px;" /></td>
+    </tr>
+    <tr>
+        <td class="title">选择场次：</td>
+        <td><select id="sessionTimesSelector"></select></td>
+    </tr>
+</table>
+
+
+
+<script>
+    $(function () {
+        bindExamCenters(true);
+        bindSessionTimes();
+        bindNubmerBox();
+        bindExamCentersSelector();
+    });
+
+    function bindNubmerBox() {
+        var examId = $('#examSelecotr').val();
+
+        $.get('/company.asmx/GetUnBindStudentsCount', { examId: examId }, function (data) {
+
+            NumberBox($('#studentsCount'), { "max": data.data, "min": 0, "step": 1 });
+        });
+
+
+    }
+
+
+
+    function bindSessionTimes() {
+        var examId = $('#examSelecotr').val();
+        var sessionTimesSelector = $('#sessionTimesSelector');
+        sessionTimesSelector.html('');
+        $.post('/company.asmx/GetSessionTime', { examId: examId }, function (data) {
+            if (data.length == 0)
+                sessionTimesSelector.append('<option value="">中心还未设置考试场次时间</option>');
+            else {
+                sessionTimesSelector.append('<option value="0">不预约考试场次时间</option>');
+                $.each(data, function () {
+                    sessionTimesSelector.append('<option value="' + this.id + '">' + this.text + '</option>');
+                });
+            }
+        });
+    }
+
+    function bindExamCenters() {
+        var examId = $('#examSelecotr').val();
+        var examCentersSelector = $('#examCentersSelector');
+        examCentersSelector.html('');
+
+        var params = {
+            examId: examId,
+        };
+
+        $.post('/company.asmx/GetExamCenters', params, function (data) {
+            if (data.length == 0)
+                examCentersSelector.append('<option value="">未设置考点或无可分配考点</option>');
+            else {
+                examCentersSelector.append('<option value="">请选择考点</option>');
+                $.each(data, function () {
+                    examCentersSelector.append('<option value="' + this.id + '" local="' + this.isLocal + '">' + this.name + (!this.isLocal ? '(上级考点)' : '') + '(' + this.computersCount + ')' + '</option>');
+                });
+
+            }
+        });
+    }
+
+
+    function bindExamCentersSelector() {
+        $('#examCentersSelector').change(function () {
+            if ($('#examCentersSelector option:selected').attr('local') == 'true')
+                $('#sessionTimesSelector').parent().parent().show();
+            else
+                $('#sessionTimesSelector').parent().parent().hide();
+
+        });
+    }
+
+
+
+    function save(callBack) {
+        var examId = $('#examSelecotr').val();
+        if (!examId)
+            throw new Error('请选择考试');
+
+        var examCenterId = $('#examCentersSelector').val();
+        if (!examCenterId)
+            throw new Error('请选择考点');
+
+        var studentsCount = $('#studentsCount').val();
+        if (studentsCount == null || studentsCount == '')
+            throw new Error('请输入考生数');
+        if (studentsCount <= 0)
+            throw new Error('请至少绑定一个考生');
+
+        var sessionTime = 0;
+        if ($('#examCentersSelector option:selected').attr('local') == 'true') {
+            sessionTime = $('#sessionTimesSelector').val();
+            if (!sessionTime)
+                throw new Error('请选择起始场次时间');
+        }
+
+        $.post('/company.asmx/BindStudents',
+            {
+              examId: examId,
+              examCenterId: examCenterId,
+              sessionTimeId: sessionTime,
+              studentsCount: studentsCount
+            }, function (data) {
+                if (data.ok) {
+                    $.messager.show({
+                        title: '提示',
+                        msg: '审核成功',
+                        timeout: 5000,
+                        showType: 'slide'
+                    });
+                    callBack();
+                }
+                else {
+                    alert(data.msg);
+                }
+        });
+    }
+
+
+
+</script>

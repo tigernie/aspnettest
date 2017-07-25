@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>题库管理</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="scripts/Tree/gzy.tree.js" type="text/javascript"></script>
+<script src="scripts/TabSet/gzy.tabset.v3.js" type="text/javascript"></script>
+<script src="scripts/PopWindow/gzy.popup.js" type="text/javascript"></script>
+<script src="script.ashx?teacher,problib,problib.ui" type="text/javascript"></script>
+<!--<script type="text/javascript" src="scripts/ExamSlu.js"></script>-->
+<script type="text/javascript" src="scripts/PaperProblems.js"></script>
+<style type="text/css">
+div.probBasket { cursor:default; position: absolute; top: 135px;line-height:24px; left: 48%; margin-left: 270px; background: white; /*border-bottom: 2px solid #3198C8;*/ width: 218px; text-align:right; }
+div.probBasket img { height:22px; margin-bottom:5px; }
+div.probBasket span { margin-top:2px;}
+div.probBasket table { display:none; }
+    div.probBasket:hover {border: 1px solid #3198C8; }
+div.probBasket:hover table { display:block; }
+</style>
+</head>
+<body>
+    <div class="body">
+        <div class="head problib">
+            <p>
+                <a href="javascript:;" class="user"></a>
+                <a href="teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a>
+                <a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+        <ul class="mtabs">
+            <li xml:lang="prob"><a href="javascript:;">试题管理</a></li>
+            <li xml:lang="paper"><a href="javascript:;">套卷管理</a></li>
+            <li xml:lang="struc"><a href="javascript:;">题库结构</a></li>
+            <li xml:lang="aduit"><a href="javascript:;">试题审核</a></li>
+            <li xml:lang="count"><a href="javascript:;">题库统计</a></li>
+            <li xml:lang="person" style="display:none"><a id="pplib_tab" href="javascript:;">个人题库</a></li>
+        </ul>
+        <div class="probBasket" id="probBasket"><img src="/images/basket_bar.png" />
+            <span>试题篮(已选&nbsp;<label id="basketProbsCount">0</label>&nbsp;题)&nbsp;&nbsp; ▾&nbsp;</span>
+            <table id="basketDetail" class="list" cellpadding="0" cellspacing="0" width="100%"></table>
+        </div>
+        <div class="mpanel prob">
+            <div class="leftpanel" id="prob-slide">学科：
+                <select id="subject" style="width:120px;margin-bottom:10px;"><option>学科</option></select>
+                <div class="treepanel" id="trees"></div>
+            </div>
+            <div id="prob-grid" class="centerpanel">
+                <form method="post" action="javascript:;" class="search" id="problist_search">
+                <label class="select"><select id="type" name="type">
+                    <option value="-1">所有题型...</option>
+                </select></label><label class="select"><select id="diff" name="diff">
+                    <option value="0">所有难度...</option>
+                    <option value="1">难题</option>
+                    <option value="2">中等题</option>
+                    <option value="3">容易题</option>
+                </select></label>
+                <input id="sk" size="20" name="sk" />
+                <button type="submit"></button>
+                <span style="float: right; padding-right: 1px;" class="search buttongroup">
+                    <input id="createProb" style="" type="button" value="新建试题" />
+                    <input id="probs-import" type="button" value="试题导入" />
+                </span>
+                <span style="float: right; padding-right: 10px;" class="search buttongroup">
+                    <input type="button" value="批量删除" id="prob-multi-delete" />
+                </span>
+                <span style="float: right; padding-right: 10px;" class="search buttongroup">
+                    <input type="button" value="试题查重" id="checkDuplication" />
+                </span>
+                </form>
+
+                <table border="0" cellpadding="0" cellspacing="0" id="problist" class="list">
+                </table>
+            </div>
+            <div id="prob-editor" style="display: none">
+                <div id="editorContainer">
+                </div>
+            </div>
+        </div>
+        <div class="mpanel paper">
+            <div class="leftpanel">
+                <form method="get" action="javascript:;" id="paperlist_search">
+                <dl>
+                    <dt>
+                        <label for="ph">套卷标题：</label></dt>
+                    <dd>
+                        <input type="text" id="ph" name="ph" /></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <label for="pa">出题人：</label></dt>
+                    <dd>
+                        <input type="text" id="pa" name="pa" /></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <label for="pt">创建时间：</label></dt>
+                    <dd style="overflow: hidden; _zoom: 1">
+                        <input type="text" id="pt" name="pt" style="width: 40%; float: left;" />--<input type="text" id="pe" name="pe" style="width: 40%; float: right" /></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <label for="pns">套卷编号：</label></dt>
+                    <dd>
+                        <input type="text" id="pns" name="pns" /></dd>
+                </dl>
+                <div style="text-align: right">
+                    <input type="submit" value="搜索" style="width: 100px; height: 30px" />
+                </div>
+                </form>
+            </div>
+            <div class="centerpanel">
+                <div class="list_tabletop search">
+                    <span class="search buttongroup">
+                        <input type="button" id="paper-import" value="导入套卷" />
+                       <!-- <input type="button" id="paper-new" value="新建套卷" />-->
+                    </span>
+                </div>
+                <table border="0" cellpadding="0" cellspacing="0" id="paperlist" class="list"></table>
+            </div>
+        </div>
+        <div class="mpanel dict">
+            <div class="leftpanel">
+                <p><a href="javascript:;">题型管理</a></p>
+                <p><a href="javascript:;">知识点管理</a></p>
+                <p><a href="javascript:;">扩展属性管理</a></p>
+             <!--   <p><a href="javascript:;">分库（来源）管理</a></p>-->
+            </div>
+            <div class="centerpanel">
+                <div class="spanel">
+                    <!--<div class="list_tabletop"><input type="button" id="add_type" value="新建题型" disabled="disabled"/></div>-->
+                    <table border="0" cellpadding="0" cellspacing="0" id="typelist" class="list"></table>
+                </div>
+                <div class="spanel">
+                    <div class="list_tabletop search">
+                        <span class="search buttongroup">
+                            <input type="button" id="mod_nodename" value="修改知识点" />
+                            <input type="button" id="add_subnode" value="添加子知识点" />
+                            <input type="button" id="del_treenode" value="删除知识点" />
+                            <input type="button" id="get_tree" value="下载知识点结构树" /></span>
+                    </div>
+                    学科：
+                    <select id="subject_kp" style="width:140px;margin-bottom:5px; margin-top:5px;"><option>学科</option></select>
+                    <div id="tree_mgr"></div>
+                </div>
+                <div class="spanel">
+                    <div class="list_tabletop search">
+                        <span class="search buttongroup">
+                            <input type="button" id="add_extendtype" value="新建扩展属性" />
+                        </span>
+                    </div>
+                    <table border="0" cellpadding="0" cellspacing="0" id="extendTypesList" class="list"></table>
+                </div>
+                <div class="spanel">
+                    <div class="list_tabletop">
+                        <input type="button" id="add_lib" value="新建分库" disabled="disabled" />
+                    </div>
+                    <table border="0" cellpadding="0" cellspacing="0" id="liblist" class="list"></table>
+                </div>
+            </div>
+        </div>
+        <div class="mpanel audit">
+            <div class="leftpanel" id="audit-slide">
+                <p><a href="javascript:;">试题审核</a></p>
+                <p><a href="javascript:;">套卷审核</a></p>
+            </div>
+            <div class="centerpanel" id="audit-grid">
+                <div class="spanel">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td valign="top" class="search">
+                                <span class="search buttongroup">
+                                    <input type="button" id="ap_ok" value="审核通过" />
+                                    <input type="button" id="ap_refu" value="审核不通过" />
+                                    <input type="button" id="ap_del" value="删除" />
+                                </span>
+                                <span class="search buttongroup">
+                                    &nbsp;&nbsp;<label><input type="checkbox" id="for_all" style="float:none;margin-right:2px;" />对所有试题执行操作</label>
+                                </span>
+                            </td>
+                            <td>
+                                <form action="javascript:;" method="post" class="search" id="ap_form" style="float: right; margin-bottom: 0">
+                                <select name="state">
+                                    <option value="UnAudit">未审核的</option>
+                                    <option value="AuditFailed">审核未通过的</option>
+                                </select>
+                                <input type="text" name="sk" value="" />
+                                <button type="submit"></button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" id="unauditproblist" class="list"></table>
+                </div>
+                <div class="spanel">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td valign="top" class="search">
+                                <span class="search buttongroup">
+                                    <input type="button" id="ae_ok" value="审核通过" />
+                                    <input type="button" id="ae_refu" value="审核不通过" />
+                                    <input type="button" id="ae_del" value="删除选中" /></span>
+                            </td>
+                            <td>
+                                <form action="javascript:;" method="get" class="search" id="ae_form" style="float: right; margin-bottom: 0">
+                                <input type="text" name="sk" value="" />
+                                <button type="submit"></button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" id="unaudit_paper_list" class="list"></table>
+                </div>
+            </div>
+            <div id="audit-editor" style="display:none">
+                <div id="auditEditorContainer"></div>
+            </div>
+        </div>
+        <div class="mpanel counter">
+            <div class="leftpanel">
+                <p><a href="javascript://ptype">按题型统计</a></p>
+                <p><a href="javascript://kpnode">按知识点统计</a></p>
+            </div>
+            <div class="centerpanel">
+                <table cellpadding="0" cellspacing="0" border="0" class="list" id="grid_counter">
+                </table>
+            </div>
+        </div>
+        <div class="mpanel prob">
+            <div class="leftpanel" id="plib_prob-slide">
+                <div class="treepanel" id="plib_tree"></div>
+            </div>
+            <div id="plib_prob-grid" class="centerpanel">
+                <form method="post" action="javascript:;" class="search" id="plib_search">
+                <select id="plib_category" name="category">
+                    <option value="-1">所有类别...</option>
+                    <option value="1">我的收藏</option>
+                    <option value="2">错题集</option>
+                </select>
+                <select id="plib_type" name="type">
+                    <option value="-1">所有题型...</option>
+                </select>
+                <select id="plib_diff" name="diff">
+                    <option value="0">所有难度...</option>
+                    <option value="1">难题</option>
+                    <option value="2">中等题</option>
+                    <option value="3">容易题</option>
+                </select>
+                <input id="plib_sk" size="20" name="sk" />
+                <button type="submit"></button>
+                <span style="float: right; padding-right: 10px;" class="search buttongroup">
+                    <input type="button" value="批量删除" id="plib-prob-multi-delete" />
+                </span>
+                </form>
+                <table border="0" cellpadding="0" cellspacing="0" id="plib_problist" class="list">
+                </table>
+            </div>
+            <div id="plib_prob-editor" style="display: none">
+                <div id="plib_editorContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="body"></p>
+    <script type="text/javascript" src="scripts/My97DatePicker/WdatePicker.js"></script>
+    <iframe id="iframe-upload" name="iframe-upload" style="display: none"></iframe>
+    <script type="text/javascript" src="/scripts/probEditor.js"></script>
+    <script src="scripts/Drag/gzy.drag.js"></script>
+</body>
+</html>

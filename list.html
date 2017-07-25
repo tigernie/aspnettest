@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>反假货币培训考试系统</title>
+    <link href="styles/reset.css" type="text/css" rel="stylesheet" />
+    <link href="styles/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main02">
+        <!--头部-->
+        <div class="header">
+            <div class="logo"><img src="/images/index/logo.jpg" /></div>
+        </div>
+        <!--头部 end-->
+        <div class="left">
+            <!--导航-->
+            <div class="menu02">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="centerDescription.html">中心简介</a></li>
+                    <li><a href="examDescription.html">考试简介</a></li>
+                    <li name="news"><a href="list.html?type=news">最新动态</a></li>
+                    <li name="exams"><a href="list.html?type=exams">考试公示</a></li>
+                    <li name="videos"><a href="list.html?type=videos">考试流程演示</a></li>
+                    <li name="manuals"><a href="list.html?type=manuals">培训专栏</a></li>
+                    <li><a href="contactus.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!--导航 end-->
+            <!--联系我们-->
+            <div class="contact">
+                <em>技术支持：</em><br />
+                <span>QQ:2768494273</span><br />
+                <span>QQ:2847237303</span><br />
+                <em>考务管理：</em><br />
+                <span>010-66199386</span>
+            </div>
+            <!--联系我们 end-->
+        </div>
+
+        <!--right-->
+        <div class="right">
+            <div class="t2" ><label name="title">考试公示</label> <span>当前位置：<a href="/index.html">首页</a> -> <label name="title"></label></span></div>
+            <div class="list">
+                <ul id="list"></ul>
+            </div>
+        </div>
+        <!--right end-->
+    </div>
+    <!--主体-->
+    <!--主体 end-->
+    <div class="footer">
+        版权所有：© 2013-2015 中国人民银行
+    </div>
+    </div>
+    <script src="scripts/jquery-1.7.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <script>
+        $(function () {
+            var type = QueryString('type');
+            var url;
+            var typeString;
+            var title;
+            if (type == 'news') {//最新动态
+                url = '/PublicPlat.asmx/GetNotes';
+                typeString = '动态';
+                title = '最新动态';
+            }
+            else if (type == 'exams') {//考试
+                url = '/PublicPlat.asmx/GetExamsBrief';
+                typeString = '考试';
+                title = '考试公示';
+            }
+            else if (type == 'videos') {//考试流程演示
+                url = '/PublicPlat.asmx/GetVideos';
+                typeString = '考试流程演示';
+                title = '考试流程演示';
+            }
+            else if (type == 'manuals') {//培训专栏
+                url = '/PublicPlat.asmx/GetManuals';
+                typeString = '培训专栏';
+                title = '培训专栏';
+            }
+            $('li[name="' + type + '"]').addClass('hover');
+            $('label[name="title"]').html(title);
+
+            $.post(url, { page: 1, pageSize: 40000 }, function (data) {
+                var html = '';
+                $.each(data, function (i, item) {
+                    html += '<li><span>' + item.date + '</span>·  <a href="' + (item.url ? item.url : '') + '">' + item.name + '</a> </li>';
+                });
+                if (!html)
+                    html = '<li>正在建设中...</li>';
+                $('#list').html(html);
+            });
+
+
+
+
+        });
+
+
+
+
+    </script>
+</body>
+</html>

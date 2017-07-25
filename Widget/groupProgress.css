@@ -1,0 +1,8 @@
+﻿  div#group_progress table tbody tr td.c1,.groupProgress_c1{ background-color:rgb(2,138,213);}
+    div#group_progress table tbody tr td.c2,.groupProgress_c2{ background-color: #fd7700;}
+    div#group_progress table tbody tr td.c3,.groupProgress_c3{ background-color: #ff0;}
+    div#group_progress table tbody tr td.c4,.groupProgress_c4{ background-color:#b2f9ff;}
+    div#group_progress table  { border:1px solid rgb(2,138,213);}
+    div#group_progress table tbody tr td{ width:0;}
+    
+    

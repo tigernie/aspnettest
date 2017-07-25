@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="">
+        <div class="title" id="infoContainer">
+            <label>考试情况</label>
+        </div>
+        <div id="overView_loading">
+            正在查询...
+        </div>
+        <div id="infoTable" class="overView_examInfo ">
+            <table class="infoTable" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="header">
+                        <label>基本信息:</label></td>
+                    <td>
+                        <label>考点:</label><a id="centerCount" href="javascript:;">128</a>个
+                    </td>
+                    <td>
+                        <label>考场:</label><a id="roomCount" href="javascript:;">248</a>个
+                    </td>
+                    <td>
+                        <label>场次:</label><a id="sessionCount" href="javascript:;">12958</a>场
+                    </td>
+                    <td>
+                        <label>场次时间段:</label><a id="sessionTimeCount" href="javascript:;">5</a>场
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="header rowspan">
+                        <label>数据包:</label></td>
+                    <td>
+                        <label>考务包:</label>
+                    </td>
+                    <td>
+                        <label>已生成:</label><a id="generatedCount" href="javascript:;">248</a>个
+                    </td>
+                    <td>
+                        <label>已下载:</label><a id="downloadedCount" href="javascript:;">168</a>个
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>结果包:</label>
+                    </td>
+                    <td>
+                        <label>已上传:</label><a id="uploadedCount" href="javascript:;">0</a>个
+                    </td>
+                    <td>
+                        <label>已导入:</label><a id="importedCount" href="javascript:;">15</a>个
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="header">
+                        <label>参考学生:</label></td>
+                    <td>
+                        <label>考生数:</label><a id="studentCount" href="javascript:;">25648</a>人
+                    </td>
+                    <td>
+                        <label>缺考:</label><a id="absentCount" style=" cursor: pointer; text-decoration: underline;" title="下载所有缺考学生名单" href="javascript:;">234</a>人
+                    </td>
+                    <td>
+                        <label>舞弊:</label><a id="cheatCount" href="javascript:;">16</a>人
+                    </td>
+                    <td>
+                        <label>手动交卷:</label><a id="manualSubmitCount" href="javascript:;">15689</a>人
+                    </td>
+                    <td>
+                        <label>强制交卷:</label><a id="autoSubmitCount" href="javascript:;">684</a>人
+                    </td>
+                    <td>
+                        <label>延时:</label><a id="delayCount" href="javascript:;">200</a>人
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="overView_resultInfo">
+        <div class="title" id="Div1">
+            <label>考试结果信息:</label>
+        </div>
+        <div class="searchBar">
+            <label>考点:</label><select id="exCenterSel">
+                <option>所有考点</option>
+            </select>
+            <label>考试状态:</label><select id="examState">
+                <option value="0">所有状态</option>
+                <option value="1">舞弊</option>
+                <option value="2">延时</option>
+            </select>
+            <label>交卷状态:</label><select id="handInState">
+                <option value="0">所有状态</option>
+                <option value="1">手动交卷</option>
+                <option value="2">自动收卷</option>
+            </select>
+            <input id="keywords" type="text" />
+        </div>
+        <div>
+            <table id="stuResult" class="list" cellpadding="0" cellspacing="0"></table>
+        </div>
+    </div>
+</body>
+
+</html>

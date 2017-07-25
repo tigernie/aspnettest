@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/prob-import.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/lib/teacher.js"></script>
+</head>
+<body>
+    <div class="body" id="previewArea">
+        <div id="preview_editor"></div>
+        <div id="prob-import" class="prob-import">
+            <div class="header">
+                <h2 id="importTitle"></h2>
+            </div>
+            <div id="stateBar" class="stateBar">
+            </div>
+            <div id="opArea" class="opArea">
+                <div class="rt"></div>
+                <div id="fileAreaContainer" class="fileAreaContainer">
+                    <div id="fileArea" class="fileArea">
+                        <span class="label">试题文件(Word格式)：</span>
+                        <span id="filePath" class="filepath">未选择任何文件</span>
+                        <form id="porb-import-form" target="probImport_upload" action="probSave.ashx?type=file&extract=true&keepName=true" method="post" enctype="multipart/form-data">
+                            <span class="btn btn-success fileinput-button">
+                                <img src="/images/addfile.png" />
+                                <span id="filechooseTitle">选择试题导入文件</span>
+                                <input id="probImportFile" type="file" name="attach" />
+                            </span>
+                            <span id="prviewBtnArea" class="btn btn-success fileinput-button">
+                                <span class="previewBtn">
+                                    <input type="button" id="previewBtn" />分析预览</span>
+                            </span>
+                            <span><a id="helper" class="link" href="/systemFiles/编辑说明.docx" target="_blank">编辑说明</a></span><br />
+                            <span><a id="sample" class="link" href="/systemFiles/试题导入示例.zip" target="_blank">样例模板</a></span>
+                        </form>
+                    </div>
+                    <div class="dashedline"></div>
+                    <div class="fileArea">
+                        <div class="filedesTitle">试题文件格式说明:</div>
+                        <div id="description" class="description">
+                            <div>1、试题文件内容格式请参考右侧说明“样例模板”及“编辑说明”</div>
+                            <div>2、试题文件支持doc或docx</div>
+                            <div>3、若含有附件，请将试题文件与附件一起压缩打包(支持rar、zip、7z格式)</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="errorInfo" class="hide errorMsg">
+                    <img src="/images/import_error.gif" class="errorImg" /><span class="errorTitle">导入失败!</span>
+                    <div class="msgBox">
+                        <label>原因：</label><br />
+                        <br />
+                        <label id="error_msg" class="error_msg">1、就是出错了，没得说<br />
+                            2、真的就是这样出错的</label>
+                        <a class="backToFirstStep" href="javascript:;">返回第一步</a>
+                    </div>
+                </div>
+                <div id="progressBarContainer" class="progressBarContainer">
+                    <div id="progressBar" class="progressbar"></div>
+                    <div id="progressInfo" class="progressPtg"></div>
+                    <a class="backToFirstStep" href="javascript:;">返回第一步</a>
+                </div>
+            </div>
+            <div id="import_Waiting" class="import_Waiting"></div>
+            <div id="resultArea" class="resultArea hide">
+                <label style="font-weight: bold">分析结果：&nbsp;</label>共有
+                <label id="totalNum" class="number">12</label>个试题
+                <span id="warnings">，有<label id="warningsNum" class="number waringNum">3</label>个警告</span>
+                <span id="errors">，有<label id="errorsNum" class="number errorNum">3</label>个错误</span>
+                <input type="button" id="btn_cancel" class="button" value="取消导入" />
+                <input type="button" id="btn_ensure" class="button" value="开始导入" />
+                <label id="import_warning" class="warnings"></label>
+            </div>
+            <div id="importContainer" class="probBox wide container">
+            </div>
+        </div>
+    </div>
+    <p class="body"></p>
+</body>
+</html>
+<iframe id="probImport_upload" name="probImport_upload" style="display: none"></iframe>
+<script type="text/javascript" src="/scripts/probEditor.js"></script>
+<script type="text/javascript" src="/scripts/problemsPreview.js"></script>
+<script src="/scripts/lib/problib.js" type="text/javascript"></script>
+<script src="scripts/ckeditor/ckeditor.js"></script>
+<script src="scripts/Tree/gzy.tree.js"></script>
+<script src="scripts/PopWindow/gzy.popup.js"></script>
+<script type="text/javascript" src="scripts/lib/problib.js"></script>
+<script type="text/javascript" src="scripts/viewProblemContent.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/progressBar/theme/jquery.ui.all.css" />
+<script src="scripts/progressBar/jquery.ui.core.js"></script>
+<script src="scripts/progressBar/jquery.ui.widget.js"></script>
+<link href="scripts/progressBar/theme/jquery.ui.progressbar.css" rel="stylesheet" />
+<script src="scripts/progressBar/jquery.ui.progressbar.js"></script>
+<iframe id="iframe-upload" name="iframe-upload" style="display: none"></iframe>
+<link href="styles/flow.css" rel="stylesheet" />

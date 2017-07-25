@@ -1,0 +1,1 @@
+insert into [SysConfig] values('MinVersion','',32,'String',null,null);

@@ -1,0 +1,90 @@
+﻿.gridview { border-width: 0px; margin-bottom: 10px; width: 100%; font-family: 宋体; color: #056d80; }
+
+.gridview thead tr th { background: #f1f1f1; color: #056d80; text-align: center; line-height: 30px; padding: 0 4px; text-align: left; }
+
+.gridview > tbody td { text-align: left; background-color: white; padding: 3px 4px; line-height: 21px; border-bottom: 1px dashed #ebebeb; }
+
+.gridview > tbody td.center { text-align: center; }
+
+.list > tbody td.center { padding-left: 45px; }
+.list > thead tr th { text-align: center; }
+.gridview > tbody td.result { text-align: center; width: 90px; }
+
+.gridview td[align=center], table.list th[align=center] { text-align: center; }
+
+.gridview td[align=right], table.list th[align=right] { text-align: right; }
+
+.gridview tr:nth-child(2n) td { background-color: #fafdf7; }
+
+.gridview tbody tr:hover td { background-color: #fbeedb; }
+
+.gridview tbody tr.deleting td { background: #ffaaaa !important; }
+
+.gridview tfoot tr td, .gridview tfoot tr:hover td { background-color: #ffffff; padding: 0; border-bottom: none; }
+
+.gridview_head { background: #f1f1f1; color: #056d80; text-align: left; line-height: 30px; padding: 0 1px; }
+
+.gridview tr td span { cursor: pointer; }
+
+.gridview tr td span:hover { text-decoration: underline; }
+
+
+div.search { text-align: left; }
+
+div.search input[type=text] { width: 150px; }
+
+div.search img { position: relative; left: -20px; height: 19px; }
+div.search img:hover { cursor: pointer; }
+
+div.search input, div.search select, div.search label { float: left; }
+
+.keyWord { text-align: left; color: #999999; font-style: italic; }
+
+
+
+.hide { display: none; }
+
+
+
+.popContent { float: none; vertical-align: middle; }
+
+.popContent label, input { float: none; }
+
+.leftContent { text-align: right; width: 16%; float: left; margin: 5px 0 5px 0; }
+
+.rightContent { text-align: left; width: 84%; float: left; margin: 5px 0 5px 0; }
+
+.rightContent input[type=radio] { width: 20px; }
+
+.rightContent select { width: 140px; }
+
+.btn { border: 1px solid #dcdcdc; background-color: #e8f9fd; }
+.btn:hover { cursor: pointer; }
+
+
+
+.centerTitle { text-align: center; font-weight: bold; }
+
+.content { text-align: left; }
+
+.deleteBtn { color: Red; cursor: pointer; }
+
+.examInfo { width: 100%; }
+
+.Btn { cursor: pointer; }
+
+.addSlu_img { cursor: pointer; width: 105px; height: 23px; margin-bottom: 6px; padding-bottom: 2px; }
+
+.selectedRow { background-color: Blue; }
+
+.noticeLabel { font-size: 12px; color: Gray; }
+
+.tablebox{border-collapse:collapse;border-top:1px solid #ccc;border-left:1px solid #ccc;width:325PX;}
+.tablebox th, .tablebox td{padding:5px;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
+.tablebox th {text-align:center;background-color:#E0E0E0;color:#333;font-weight:normal; }
+.tablebox td{text-align:center;color:#333;}
+.tablebox .total,.tablebox .total input{color:blue;font-weight:bold;}
+.singleJudgePointInput,.tablebox input{margin:0 5px;border:1px solid #ccc;text-align:center;background-color:#fafdf7;}
+
+
+

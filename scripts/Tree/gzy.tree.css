@@ -1,0 +1,19 @@
+﻿.tree { font-size: 12px; }
+.tree dl { margin: 0 !important; }
+
+.tree dt { float: none!important; width: auto!important; text-align: left !important; height: 21px; border: 1px solid white; border-radius: 4px; line-height: 21px; padding-left: 24px; -moz-user-select: none; -webkit-user-select: none; white-space: nowrap; }
+.tree dt.selected { border-color: #84ACDD; background: url(images/selected-bg.gif) repeat-x!important; }
+.tree dt:hover { border-color: #84ACDD; background: url(images/hover-bg.gif) repeat-x; }
+.tree dt.haschild { padding-left: 5px; }
+
+.tree dt span { float: left; width: 16px; height: 16px; margin: 3px 3px 0 0; display: none; }
+.tree dt.selected span { background-image: url(images/selected-folder.gif); }
+.tree dt.haschild span { background: url(images/folder.gif) 4px 3px no-repeat; display: block; }
+.tree dt.expanded span { background: url(images/folder-open.gif) 4px 5px no-repeat; }
+.tree dt.loading span { background: url(images/loading.gif) 0px 0px no-repeat; }
+
+.tree dt label { cursor: pointer; margin-right: 3px; text-align: left !important; }
+.tree dt input { vertical-align: middle; margin: -2px 2px 0 0; }
+.tree dt i { cursor: default; margin-right: 3px; }
+
+.tree dd { padding-left: 12px; display: none; float: none!important; }

@@ -1,0 +1,78 @@
+﻿@import url(ext-example.css);
+
+.header { height:80px; background:url(../images/headbg.jpg) left top no-repeat #0994cf; padding:20px; }
+.header h1 { float:left; font-size:28px; text-indent:-100em; margin-bottom: 0; }
+.header a.returnBack { float: right; color: white; }
+
+.x-menu-item-text,
+.x-panel-header-text-default,
+.x-btn-default-toolbar-small .x-btn-inner,
+.x-btn-default-small .x-btn-inner,
+.x-window-header-text-default,
+.x-toolbar .x-toolbar-text,
+.x-form-invalid-tip-body,
+.x-tip-body,
+.x-grid-empty,
+.x-toolbar .x-form-item-label,
+.x-tab button,
+.x-mask-msg div,
+.x-fieldset-header .x-fieldset-header-text,
+.x-grid-cell-inner { font-size:12px; }
+.x-column-header-text  { font-size:12px; line-height:24px }
+.x-menu-item-link { padding-top: 3px; }
+
+.x-tab button { font-weight:normal; height:14px!important; }
+.x-tab-active button { font-weight:bold; }
+
+.x-form-invalid-tip-body { background-position:1px 3px; padding-right:6px; }
+.x-form-invalid-tip-body li { margin-bottom:0; }
+
+.x-toolbar .x-autocontainer-form-item,
+.x-toolbar .x-anchor-form-item,
+.x-toolbar .x-vbox-form-item,
+.x-toolbar .x-checkboxgroup-form-item,
+.x-toolbar .x-table-form-item { margin-bottom:0; }
+
+.x-grid-cell-inner a { color:#04408C; text-decoration:none; }
+.x-grid-cell-inner a:hover { color:blue; text-decoration:underline; }
+
+.x-form-readonly input { color:gray; }
+
+.x-item-disabled .x-btn-arrow { background-image:url(../images/arrow-disabled.gif); }
+
+.x-tab-default-top button, .x-tab-default-top .x-tab-inner { height:14px; line-height: 14px; }
+
+.organization { background-image:url(../images/group.gif); }
+.usermgr { background-image:url(../images/user.png); }
+.syssetting { background-image:url(../images/setting.gif); }
+
+.adduser { background-image:url(../images/adduser.gif); }
+.deleteuser { background-image:url(../images/deleteuser.gif); }
+.edituser { background-image:url(../images/edituser.gif); }
+.search { background-image:url(../images/search.gif); }
+
+/*通用图标*/
+.add { background-image:url(../images/add.gif); }
+.delete { background-image:url(../images/delete.gif); }
+.edit { background-image:url(../images/edit.gif); }
+.import { background-image:url(../images/import.gif); }
+.save { background-image:url(../images/save.gif); }
+.view { background-image:url(../images/search.gif); }
+.change{ background-image:url(../images/drive_user.png); }
+.back{ background-image:url(../images/back.png); }
+
+.return { }
+
+.selectArea { display: none; }
+.x-grid-row-over .selectArea { display: inline; }
+
+.p_tree { padding: 5px; font-size: 12px; }
+.p_tree div { overflow:hidden; }
+.p_tree a { text-decoration:none; white-space:nowrap; float:left; padding:0 3px 1px; color:black; }
+.p_tree div.a { display:none; padding-bottom:5px; margin-bottom:5px; border-bottom:#99bce8 dotted 1px; }
+.p_tree a:hover { text-decoration:underline; text-decoration-color:red; background-color:#aabce8; }
+.p_tree a.current { color:white; background-color:green; }
+.p_tree a.current:hover { text-decoration:none; }
+.p_tree form { border:#99bce8 solid 1px; }
+
+#settings-body table.x-anchor-form-item { margin-top: 10px; margin-bottom: 15px; }

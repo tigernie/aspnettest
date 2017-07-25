@@ -1,0 +1,2262 @@
+[08-22 10:30:49.876]
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+无法获取属性“length”的值: 对象为 null 或未定义-->http://192.168.1.119/scripts/jquery-1.7.min.js-->2
+[08-22 12:41:08.729]
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+“console”未定义-->http://192.168.1.119/scripts/jquery-1.7.min.js-->2
+[08-22 11:00:31.716]
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E)
+“console”未定义-->http://192.168.1.118/scripts/jquery-1.7.min.js-->2
+[08-23 02:48:13.338]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E)
+无法获取未定义或 null 引用的属性“length”-->http://192.168.1.108/scripts/jquery-1.7.min.js-->2-->11607
+[08-23 02:49:39.753]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E)
+无法获取未定义或 null 引用的属性“length”-->http://192.168.1.108/scripts/jquery-1.7.min.js-->2-->11607
+[08-23 04:58:14.965]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E)
+无法获取未定义或 null 引用的属性“length”-->http://192.168.1.108/scripts/jquery-1.7.min.js-->2-->11607
+[08-23 09:34:54.549]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E)
+无法获取未定义或 null 引用的属性“length”-->http://192.168.1.108/scripts/jquery-1.7.min.js-->2-->11607
+[08-27 11:48:02.796]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; rv:11.0) like Gecko
+对象不支持“delay”属性或方法-->http://192.168.1.208/scripts/lib/teacher.js-->39-->22-->TypeError: 对象不支持“delay”属性或方法
+[09-25 09:39:29.632]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:30.992]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:32.664]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:34.022]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:35.925]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:37.418]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:39.727]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:41.037]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:43.489]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:45.184]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:49.015]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:39:50.233]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:11.551]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:13.603]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:16.844]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:18.006]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:19.435]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:20.590]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:21.987]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:23.046]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:40:25.757]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:29.831]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:31.448]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:32.305]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:36.935]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:37.981]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:39.683]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:40.463]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:43.392]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:44.211]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:45.221]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:46.263]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:48.473]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:49.558]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:52.711]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:41:53.941]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:12.006]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:13.158]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:15.688]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:16.461]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:18.903]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:19.941]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:31.095]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:32.391]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:34.960]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:36.464]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:39.277]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:41.313]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:41.927]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:45.209]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:46.629]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:48.691]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:49.510]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:50.439]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:51.461]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:53.423]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:55.896]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:47:58.827]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 09:48:00.034]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+“form”未定义-->http://localhost/exam.htm-->1-->1-->ReferenceError: “form”未定义
+[09-25 10:44:10.938]
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko
+对象不支持“delay”属性或方法-->http://localhost/scripts/lib/teacher.js-->39-->22-->TypeError: 对象不支持“delay”属性或方法
+[07-30 11:49:07.953]
+Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+Uncaught TypeError: Cannot read property 'content' of null-->http://192.168.1.8/script.ashx?exam,exam.ui-->1-->69-->TypeError: Cannot read property 'content' of null
+[07-30 02:20:35.731]
+Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 SE 2.X MetaSr 1.0
+Uncaught TypeError: Cannot read property 'content' of null-->http://192.168.1.8/script.ashx?exam,exam.ui-->1-->69-->TypeError: Cannot read property 'content' of null
+[06-25 09:31:17.181]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:17.451]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:20.881]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:23.681]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:24.291]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:31.420]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:32.650]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:33.980]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:35.730]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:39.600]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:40.540]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:43.420]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:45.210]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:46.360]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:47.787]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:49.117]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:50.657]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:51.247]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:52.272]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:53.863]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:54.263]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:56.333]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:03.015]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:03.285]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:03.995]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:06.085]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:06.805]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:07.785]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:08.305]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:08.665]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.045]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.365]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.515]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.595]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.995]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:10.465]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:10.785]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:11.055]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:11.345]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:11.635]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:11.945]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:12.905]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:16.175]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:17.735]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:18.535]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:18.705]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:21.122]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:23.432]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:24.032]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:24.172]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:24.552]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:24.782]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:25.402]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:26.452]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:26.502]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:27.032]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:27.922]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:29.442]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:30.022]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:30.502]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:31.052]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:31.712]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:31.882]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:32.052]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:32.332]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:33.418]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:33.558]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:33.788]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:34.228]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:34.388]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:35.078]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:36.688]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:36.828]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:37.273]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:38.033]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:38.493]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:39.083]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:40.533]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:40.653]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:41.613]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:42.823]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:43.323]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:45.403]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:45.693]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:46.463]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:48.223]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:48.463]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:48.483]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:50.173]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:50.323]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:52.136]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:52.416]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:52.616]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:52.746]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:53.826]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:53.846]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:54.446]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:54.526]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:54.826]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:54.826]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:55.046]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:55.446]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:56.426]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:56.886]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:57.476]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:57.676]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:58.136]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:59.526]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:01.276]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:01.496]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:01.716]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:02.956]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:03.036]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:03.946]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:04.556]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:04.996]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:05.046]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:06.289]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:06.489]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:07.299]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:07.669]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:08.669]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:12.999]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:14.515]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:15.355]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:15.565]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:16.385]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:17.335]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:18.235]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:18.785]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:19.565]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:20.175]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:20.465]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:20.575]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:21.255]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:21.715]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:21.915]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:22.311]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:22.421]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:23.491]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:23.611]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:23.949]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:24.929]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:25.159]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:25.419]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:25.959]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:26.209]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:26.429]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:27.159]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:28.069]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:29.249]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:29.909]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:30.409]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:30.489]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:31.609]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:32.289]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:32.439]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:33.229]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:35.862]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:35.892]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:36.934]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:37.989]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:38.316]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:38.916]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:39.006]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:39.379]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:40.036]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:42.186]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:42.696]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:44.336]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:45.416]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:49.216]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:49.786]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:52.356]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:53.806]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:55.466]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:56.407]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:56.527]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:56.777]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:57.617]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:57.657]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:57.937]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:59.187]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:04.527]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:04.707]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:05.307]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:07.457]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:07.837]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:09.967]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:09.997]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:20.235]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:21.815]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:23.385]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:24.645]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:27.575]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:29.332]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:29.632]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:30.802]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:33.572]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:38.541]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:40.891]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:44.891]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:46.201]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:46.931]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:47.201]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:49.221]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:57.781]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:58.851]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:01.102]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:02.612]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:02.672]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:02.922]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:03.542]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:04.032]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:04.922]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:05.642]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:06.202]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:06.282]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:07.072]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:08.794]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:09.074]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:09.494]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:10.004]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:10.614]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:10.924]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:13.404]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:13.494]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:14.574]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:15.214]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:15.954]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:16.354]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:16.824]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:16.964]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:17.834]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:22.054]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:23.094]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:24.324]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:24.984]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:25.384]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:26.494]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:27.534]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:27.984]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:30.814]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:33.981]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:34.011]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:34.931]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:35.031]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:36.311]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:38.028]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:38.268]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:44.398]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:56.145]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:01.515]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:05.619]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:13.113]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:13.653]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:17.024]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:18.184]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:18.274]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:19.184]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:20.634]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:21.484]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:24.504]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:27.136]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:33.986]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:38.990]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:40.870]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:44.320]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:46.790]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:47.810]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:48.680]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:49.080]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:52.880]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:54.360]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:54.860]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:36:55.240]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:02.573]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:04.103]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:06.323]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:12.263]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:15.043]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:19.323]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:20.733]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:21.843]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:22.213]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:23.863]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:24.183]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:24.363]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:25.863]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:27.823]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:28.593]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:29.023]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:32.758]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:34.848]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:36.338]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:37.258]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:40.445]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:47.521]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:48.211]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:50.121]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:51.211]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:02.241]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:04.631]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:06.951]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:08.621]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:08.801]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:10.624]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:13.714]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:15.152]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:15.482]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:16.282]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:17.382]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:30.502]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:31.302]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:40.024]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:41.124]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:41.994]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:42.414]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:42.754]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:43.864]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:45.604]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:47.236]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:47.616]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:48.796]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:49.516]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:51.156]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:51.646]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:52.976]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:54.936]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:56.096]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:57.596]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:58.176]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:58.756]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:59.026]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:59.396]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:00.066]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:00.366]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:01.376]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:02.456]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:03.766]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:05.046]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:05.546]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:06.106]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:06.196]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:06.516]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:06.936]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:07.456]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:07.506]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:08.256]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:08.566]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:08.996]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:10.338]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:10.388]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:11.611]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:14.421]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:15.801]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:16.531]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:17.741]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:18.441]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:19.101]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:19.858]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:20.478]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:21.718]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:23.298]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:23.908]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:26.768]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:29.958]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:30.178]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:31.788]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:31.818]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:33.148]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:33.568]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:33.938]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:33.938]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:34.618]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:34.728]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:35.508]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:35.888]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:36.198]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:37.258]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:37.958]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:38.658]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:40.628]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:41.288]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:41.988]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:42.718]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:43.468]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:44.238]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:48.768]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:51.198]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:55.859]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:39:57.569]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:03.518]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:05.998]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:14.529]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:15.469]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:20.162]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:22.862]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:24.112]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:25.638]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:26.228]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:26.688]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:27.448]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:30.648]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:52.665]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:53.125]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:53.865]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:40:58.445]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:00.435]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:14.790]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:18.350]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:18.950]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:20.940]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:21.160]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:22.450]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:22.490]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:41:31.461]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:38.939]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:40.539]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:41.929]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:42.879]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:54.019]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:56.374]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:56.474]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:57.504]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:30:57.664]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:00.822]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:01.002]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:01.722]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:02.582]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:03.002]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:05.692]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:07.852]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:08.619]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:09.949]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:11.819]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:13.279]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:13.709]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:14.009]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:14.339]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:14.449]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:15.039]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:15.329]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:15.879]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:16.259]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:16.579]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:18.049]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:20.379]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:20.529]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:21.709]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:23.959]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:27.409]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:35.434]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:36.194]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:38.394]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:38.924]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:43.109]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:43.539]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:44.169]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:46.169]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:46.619]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:48.179]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:49.379]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:50.089]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:50.249]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:50.449]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:50.899]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:52.549]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:52.869]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:54.209]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:54.759]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:55.769]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:56.869]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:58.549]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:59.449]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:31:59.539]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:01.019]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:03.517]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:04.843]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:05.953]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:06.693]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:07.993]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:08.443]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.649]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:09.959]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:11.219]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:12.429]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:12.529]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:13.579]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:14.429]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:14.579]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:15.329]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:16.169]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:16.779]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:17.379]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:18.489]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:19.059]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:20.079]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:22.909]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:25.109]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:28.579]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:29.509]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:29.669]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:30.649]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:31.119]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:31.649]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:33.879]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:35.689]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:43.879]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:45.779]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:48.779]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:54.299]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:32:58.929]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:00.449]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:18.314]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:49.681]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:33:59.037]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:00.596]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:08.406]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:28.435]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:34.231]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:35.396]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:36.255]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:47.388]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:34:56.255]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:38.944]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:41.234]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:42.634]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:43.924]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:45.694]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:48.802]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:35:51.243]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:37:58.069]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:05.179]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 09:38:19.253]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:16.982]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:16.992]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:16.992]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:16.992]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:17.142]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:18.924]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:18.954]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:19.554]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:19.624]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:20.344]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:20.914]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:21.374]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:23.544]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:24.554]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:25.774]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:26.654]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:26.944]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:28.534]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:28.664]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:29.544]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:29.914]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:30.784]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:32.837]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:32.857]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:37.427]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:38.317]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:45.107]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:48.397]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:53.222]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:57.322]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:30:58.602]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:00.302]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:03.312]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:05.842]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:07.442]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:08.972]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:11.102]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:13.662]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:17.092]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:21.142]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:23.712]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:24.342]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:24.782]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:26.782]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:27.615]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:27.765]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:33.255]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:36.535]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:37.435]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:39.475]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:42.515]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:44.135]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:46.235]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:47.405]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:48.495]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:51.625]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:53.225]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:54.415]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:55.135]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:55.335]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:31:55.855]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:00.995]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:04.129]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:05.219]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:06.789]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:07.749]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:11.186]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:11.406]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:11.926]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:13.136]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:22.886]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:29.116]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:29.826]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:33.076]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:34.276]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-25 10:32:34.866]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 11:15:45.628]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 11:15:46.003]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 11:15:46.658]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 11:15:47.219]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:09:59.852]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:00.366]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:00.834]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:01.599]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:05.111]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:16.998]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:10:17.029]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:11.542]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:16.004]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:17.346]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:38.640]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:40.340]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:41.152]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:41.683]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:43.570]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 01:43:44.413]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:11.479]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:12.430]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:12.805]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:13.710]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:14.349]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:14.864]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:15.285]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:50:16.315]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:51:58.416]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:51:58.994]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:51:59.914]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:00.382]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:06.436]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:06.966]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:07.653]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:09.244]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:09.618]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:10.149]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:11.428]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:14.283]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:15.843]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:18.838]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 02:52:19.555]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:37.954]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:40.559]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:40.856]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:42.696]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:49.982]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:53.041]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 03:59:54.508]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:01.201]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:03.130]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:04.771]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:05.754]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:06.232]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:22.523]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:25.178]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:25.568]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:37.255]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:39.427]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:44.107]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:45.604]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:00:54.767]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:08.589]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:09.135]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:10.321]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:12.458]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:12.785]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:13.144]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:13.893]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:21.820]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[06-26 04:01:24.581]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+'content' 为空或不是对象-->http://192.168.1.100/script.ashx?exam,exam.ui-->1
+[09-10 09:19:58.278]
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C)
+对象不支持此属性或方法-->http://10.30.150.67/script.ashx?teacher,watch,watch.ui-->1

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>反假货币培训考试系统</title>
+    <link href="/styles/reset.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/main.css" type="text/css" rel="stylesheet" />
+    <script src="scripts/jquery-1.7.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!--头部-->
+        <div class="header">
+            <div class="logo"><img src="/images/index/logo.jpg" /></div>
+        </div>
+        <!--头部 end-->
+        <!--导航-->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="centerDescription.html">中心简介</a></li>
+                <li><a href="examDescription.html">考试简介</a></li>
+                <li><a href="list.html?type=news">最新动态</a></li>
+                <li><a href="list.html?type=exams">考试公示</a></li>
+                <li><a href="list.html?type=videos">考试流程演示</a></li>
+                <li><a href="list.html?type=manuals">培训专栏</a></li>
+                <li><a href="contactus.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!--导航 end-->
+        <!--主体-->
+        <div class="wrapper">
+            <!--1-->
+            <div class="c1">
+                <div class="exam">
+                    <div class="t"><h3>考试流程演示</h3> &nbsp;&nbsp; <h5><a href="/list.html?type=videos">更多+</a></h5></div>
+                    <div class="exam0">
+                        <ul style="display:block; height:115px;" id="videos">
+                            <li>正在加载...</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--联系我们-->
+                <div class="contact">
+                    <em>技术支持：</em><br />
+                    <span>QQ:2768494273</span><br />
+                    <span>QQ:2847237303</span><br />
+                    <em>考务管理：</em><br />
+                    <span>010-66199386</span>
+                </div>
+                <!--联系我们 end-->
+            </div>
+            <!--1 end-->
+            <!--2-->
+            <div class="c2">
+                <div class="exam" style=" margin-bottom:20px;">
+                    <div class="t"><h3>最新动态</h3><h5><a href="/list.html?type=news">更多+</a></h5></div>
+                    <ul style="margin-bottom:20px;height:92px;" id="notes">
+                        <li>正在加载...</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="exam">
+                    <div class="t"><h3>考试公示</h3><h5><a href="/list.html?type=exams">更多+</a></h5></div>
+                    <ul id="examList" style="height:92px;">
+                        <li>正在加载...</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!--2 end-->
+            <!--3-->
+            <div class="c3">
+                <div class="mag"><a href="http://124.254.58.92:8887/Signup.aspx"><img src="/images/index/mag.png" alt="考生管理" title="考生管理" /></a></div>
+                <div class="training">
+                    <div class="exam" style="width:85%; margin-left:12px;">
+                        <div class="t"><h3>培训专栏</h3><h5><a href="/list.html?type=manuals">更多+</a></h5></div>
+                        <ul id="manuals">
+                            <li>正在加载...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--3 end-->
+        </div>
+        <!--主体 end-->
+        <div class="footer">
+            版权所有：© 2013-2015 中国人民银行
+        </div>
+    </div>
+    <script>
+        $(function () {
+
+            //获取公告列表
+            $.post('/PublicPlat.asmx/GetNotes', { page: 1, pageSize: 4 }, function (data) {
+                var html = '';
+                $.each(data, function (i, notice) {
+                    html += '<li><span>' + notice.date + '</span>·  <a href="' + notice.url + '">' + notice.name + '</a> </li>';
+                });
+                if (!html)
+                    html = '<li>暂无公告</li>';
+                $('#notes').html(html);
+            });
+
+
+            //获取考试列表
+            $.post('/PublicPlat.asmx/GetExamsBrief', { page: 1, pageSize: 4 }, function (data) {
+                var html = '';
+                $.each(data, function (i, exam) {
+                    html += '<li><span>' + exam.date + '</span>·  <a href="' + exam.url+ '">' + exam.name + '</a> </li>';
+                });
+                if (!html)
+                    html = '<li>暂无考试</li>';
+                $('#examList').html(html);
+            });
+
+            //获取视频列表
+            $.post('/PublicPlat.asmx/GetVideos', { page: 1, pageSize: 5 }, function (data) {
+                var html = '';
+                $.each(data, function (i, video) {
+                    html += '<li><span>' + video.date + '</span>·  <a href="' + video.url + '">' + video.name + '</a> </li>';
+                });
+                if (!html)
+                    html = '<li>暂无视频</li>';
+                $('#videos').html(html);
+            });
+
+            //获取手册列表
+            $.post('/PublicPlat.asmx/GetManuals', { page: 1, pageSize: 6}, function (data) {
+                var html = '';
+                $.each(data, function (i, manual) {
+                    html += '<li>·  <a href="' + manual.url + '">' + manual.name + '</a> </li>';
+                });
+                if (!html)
+                    html = '<li>正在建设中...</li>';
+                $('#manuals').html(html);
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

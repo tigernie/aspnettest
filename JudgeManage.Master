@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JudgeManage.master.cs"
+    Inherits="Web.JudgeManage.JudgeManage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="styles/style_webForms.css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+    <script type="text/javascript" src="scripts/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="scripts/common.js"></script>
+    <script type="text/javascript" src="scripts/webForm_common.js"></script>
+    <script type="text/javascript" src="scripts/webFormPager/gzyPager.js"></script>
+    <script type="text/javascript" src="script.ashx?teacher,teacher.ui"></script>
+    <script type="text/javascript" src="scripts/Drag/gzy.drag.js"></script>
+    <asp:ContentPlaceHolder ID="head"  runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="body">
+        <%--头部--%>
+        <div class="head problib" style="background: url(../images/teacher.result.jpg);">
+            <p>
+                <a href="javascript:;" class="user">管理员</a> <a href="../teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a><a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+      <asp:HiddenField runat="server" ID="sysVersion" ClientIDMode="Static" />
+        <div class="wide">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <p class="body">
+    </p>
+    </form>
+</body>
+</html>

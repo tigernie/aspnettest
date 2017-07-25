@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>教师登录</title>
+<meta http-equiv="x-ua-compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/lib/teacher.js"></script>
+<script type="text/javascript" src="scripts/lib/login.ui.js"></script>
+<script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+body, td, th { font-size: 14px; font-family: 微软雅黑; }
+body { background:url(images/loginbg.teacher.png) repeat-x top left; }
+th { text-align: left; }
+form { width: 1000px; height: 533px; position: relative; background: url("images/login.teacher.png") no-repeat; margin: 0 auto; overflow: hidden; }
+input.text { height: 33px; line-height: 32px; background-image: url(images/login.input.png); border: none; width: 170px; padding: 0 5px; }
+button { background: none; border: none; width: 95px; height: 30px; background: url("images/login.btn.png"); cursor: pointer; }
+table { position: absolute; top: 240px; left: 540px; }
+#msg { font-weight:bold; color:red; }
+</style>
+ 
+</head>
+<body>
+
+<form action="javascript:;" method="post" class="tl">
+<table width="300" border="0" cellpadding="0" cellspacing="5">
+	<tr>
+		<td height="40" width="80" nowrap="nowrap" align="right">用户名：</td>
+		<td><input value="" type="text" name="uname" id="uname" class="text" /></td>
+	</tr>
+	<tr>
+		<td height="40" nowrap="nowrap" align="right">密码：</td>
+		<td><input value="" name="upass" type="password" id="upass" class="text" /></td>
+	</tr>
+    <tr id="centerEntrance" style="display:none;">
+        <td height="30"></td>
+        <td align="left"><label><input type="checkbox" id="center" value="true" checked="checked" /> 登录到中心考试下载入口</label></td>
+    </tr>
+    <tr id="centerUrl" style="display:none;">
+        <td height="40" nowrap="nowrap" align="right">中心地址：</td>
+        <td align="left"><input value="" name="upass" type="text" id="centerUrlBox" class="text" /></td>
+    </tr>
+    <tr id="restoreMode" style="display:none;">
+        <td height="30"></td>
+        <td align="left"><label><input type="checkbox" id="restore" value="true" /> 切换回中心对接模式</label></td>
+    </tr>
+	<tr>
+		<td></td>
+		<td align="left"><button type="submit"></button></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td align="left" id="msg"></td>
+	</tr>
+</table>
+</form>
+<div id="msg_checkOnline" style=" display:none;"></div>
+<div class="copyright" align="center">版权所有 © 2013-2015 中国人民银行</div>
+<div class="copyright" align="center" id="version"></div>
+</body>
+</html>
+<script type="text/javascript">
+    if ('service' in jQuery) {
+        jQuery.service('user.asmx/GetInfo', function (d) {
+            if (d.school) $.gf('<label style="position:absolute;margin:40px 0px 0px 510px;font-size:18px;">{1}<br>{2}</label>', d.school, d.examName || '').prependTo('form');
+            switch (d.mode) {
+                case 'CenterVisitMode':
+                    $('#centerUrl').show();
+                    break;
+                case 'CenterTestMode':
+                    $('#restoreMode').show();
+                    break;
+            }
+            if (d.remoteUrl)
+                $('#centerUrlBox').val(d.remoteUrl);
+        });
+    } else {
+        location.reload(true);
+    }
+    $('#version').load('/version.txt');
+</script>
+

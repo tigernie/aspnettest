@@ -1,0 +1,36 @@
+﻿<dl class="box">
+    <dt><b>考生信息</b> <a href="javascript:;" id="view_all">查看所有单位</a></dt>
+    <dd>
+        <div class="s_left"><div class="s_left_top">区和单位(未绑定/总数)</div><div id="s-tree"></div></div>
+        <div class="s_main">
+            <table width="100%" cellpadding="0" cellspacing="10" border="0">
+                <tr>
+                    <td>
+                        <form action="javascript:;" method="post" id="form"><!--<select name="classId">
+                            <option value="-1">班级...</option>
+                        </select>--> <input type="text" name="query" value="" size="20" />
+                        <button type="submit" class="common">查找</button></form>
+                    </td>
+                    <td align="right"><form action="centerImportStudents.ashx" method="post" id="upload" target="upframe" enctype="multipart/form-data">
+                        <table>
+                            <tr>
+
+                                <td><a href="/systemfiles/中心导入模板.zip" style="margin-right:10px;">导入模板下载</a></td>
+                                <td>
+                                    <div id="important-student-container" style="width:113px;height:22px;overflow:hidden;background:url(images/center/upload.jpg);text-align:right">
+                                        <input type="file" name="file" id="import-student" onchange="submit()" style="opacity:0;width:500px;cursor:pointer;border-left:500px solid red;border-bottom:100px solid red;height:22px;filter:alpha(opacity=0)" />
+                                    </div>
+                                    <input type="hidden" name="exid" />
+                                </td>
+                                <td><button id="delete-student" type="button" class="silver " >清除学生</button></td>
+                            </tr>
+                        </table>
+                    </form></td>
+                </tr>
+            </table>
+            <iframe name="upframe" id="upframe" style="display:none"></iframe>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" id="list-student" class="list">
+            </table>
+        </div>
+    </dd>
+</dl>

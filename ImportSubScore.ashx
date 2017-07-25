@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="ScoreMgr.asmx.cs" Class="Web.Handlers.SubScore" %>

@@ -1,0 +1,30 @@
+﻿<dl class="box">
+    <dt><b>审核人行报名信息</b></dt>
+    <dt>
+        <select id="paySelector">
+            <option value="">所有缴费</option>
+            <option value="1">已缴费</option>
+            <option value="0">未缴费</option>
+        </select>
+        <select id="passSelector">
+            <option value="">所有审核状态</option>
+            <option value="3">未处理</option>
+            <option value="1">已通过</option>
+            <option value="2">已退回</option>
+        </select>
+        <a href="javascript:;" id="exportAuditInfo">导出人行已审核情况表</a>
+    </dt>
+    <dt> 
+        <form action="centerImportFee.ashx" method="post" id="upload" target="upframe" enctype="multipart/form-data">
+            缴费信息导入<div id="important-student-container" style="width:113px;height:22px;overflow:hidden;display:inline-block;background:url(images/center/upload.jpg);text-align:right">
+                <input type="file" name="file" id="import-fee" onchange="submit()" style="opacity:0;width:500px;cursor:pointer;border-left:500px solid red;border-bottom:100px solid red;height:22px;filter:alpha(opacity=0)" />
+            </div>
+            <input type="hidden" name="exid" />
+        </form>
+
+        <iframe name="upframe" id="upframe" style="display:none"></iframe>
+    </dt>
+    <dd>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" id="list-orgs" class="list"></table>
+    </dd>
+</dl>

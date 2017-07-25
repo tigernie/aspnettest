@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQLServerDBInfo</name>
+    </assembly>
+    <members>
+        <member name="M:SQLServerDBInfo.SQLStruct.UpdateTo(SQLServerDBInfo.SQLStruct)">
+            <summary>
+            将本结构更新到目标结构
+            </summary>
+            <param name="destinationStruct">目标结构</param>
+        </member>
+        <member name="M:SQLServerDBInfo.SQLStruct.ExportStruct(System.String)">
+            <summary>
+            导出结构至文件
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:SQLServerDBInfo.SQLStruct.GetSQLStructFromFile(System.String)">
+            <summary>
+            从文件中读取数据库结构
+            </summary>
+            <param name="filePath">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="T:SQLServerDBInfo.Column">
+            <summary>
+            列
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.TableName">
+            <summary>
+            所在表名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.Name">
+            <summary>
+            列名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.TypeName">
+            <summary>
+            类型名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.DefaultValue">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.IsNullable">
+            <summary>
+            可否为空
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.Comments">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Column.IsIdentity">
+            <summary>
+            是否为标识位
+            </summary>
+        </member>
+        <member name="T:SQLServerDBInfo.ForeignKey">
+            <summary>
+            外键
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.ForeignKey.Drop">
+            <summary>
+            删除外键
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.ForeignTable">
+            <summary>
+            外键所在表
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.ForeignColumn">
+            <summary>
+            外键所在列
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.PrimaryTable">
+            <summary>
+            主表
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.PrimaryColumn">
+            <summary>
+            主键所在列
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.IsDelteCasCade">
+            <summary>
+            是否级联删除
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ForeignKey.IsUpdateCasCade">
+            <summary>
+            是否级联更新
+            </summary>
+        </member>
+        <member name="T:SQLServerDBInfo.SQLIndex">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.SQLIndex.Delete">
+            <summary>
+            删除索引
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.SQLIndex.Create">
+            <summary>
+            创建索引
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.SQLIndex.Name">
+            <summary>
+            索引名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.SQLIndex.Scripts">
+            <summary>
+            创建脚本
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.SQLIndex.TableName">
+            <summary>
+            所在表名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.PK.TableName">
+            <summary>
+            主键所在表名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.PK.ColumnNames">
+            <summary>
+            主键所包含的列名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.PK.PKName">
+            <summary>
+            主键名
+            </summary>
+        </member>
+        <member name="T:SQLServerDBInfo.Table">
+            <summary>
+            表
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.Table.UpdateTo(SQLServerDBInfo.Table)">
+            <summary>
+            更新到新表
+            </summary>
+            <param name="destinationTable">目标表</param>
+        </member>
+        <member name="M:SQLServerDBInfo.Table.UpdateTables(System.Collections.Generic.IEnumerable{SQLServerDBInfo.Table},System.Collections.Generic.IEnumerable{SQLServerDBInfo.Table})">
+            <summary>
+            更新到目标表
+            </summary>
+            <param name="sourceTables">源表</param>
+            <param name="destinationTables">目标表</param>
+        </member>
+        <member name="M:SQLServerDBInfo.Table.ClassifyTables(System.Collections.Generic.IEnumerable{SQLServerDBInfo.Table},System.Collections.Generic.IEnumerable{SQLServerDBInfo.Table},System.Collections.Generic.List{SQLServerDBInfo.Table}@,System.Collections.Generic.List{SQLServerDBInfo.Table}@,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{SQLServerDBInfo.Table,SQLServerDBInfo.Table}}@)">
+            <summary>
+            分类表
+            </summary>
+            <param name="sourceTables">源表</param>
+            <param name="destinationTables">目标表</param>
+            <param name="deleteTables">待删除的表</param>
+            <param name="addTables">待添加的表</param>
+            <param name="updateTables">待更新的表</param>
+        </member>
+        <member name="P:SQLServerDBInfo.Table.Name">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Table.Columns">
+            <summary>
+            表所包含的列
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Table.Indexes">
+            <summary>
+            表所包含的索引
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Table.FKeys">
+            <summary>
+            外键
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.Table.Pk">
+            <summary>
+            主键所在列
+            </summary>
+        </member>
+        <member name="T:SQLServerDBInfo.ViewOrSP">
+            <summary>
+            视图
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.ViewOrSP.Delete">
+            <summary>
+            删除视图
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.ViewOrSP.Create">
+            <summary>
+            创建视图
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.ViewOrSP.ReCreate">
+            <summary>
+            重建
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.ViewOrSP.GetAllViewsOrSPs">
+            <summary>
+            获取所有视图和存储过程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SQLServerDBInfo.ViewOrSP.Name">
+            <summary>
+            表或视图名
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ViewOrSP.Script">
+            <summary>
+            创建脚本
+            </summary>
+        </member>
+        <member name="P:SQLServerDBInfo.ViewOrSP.Type">
+            <summary>
+            是否为视图
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.Init.InitSQLEnviroment">
+            <summary>
+            初始化SQL环境
+            </summary>
+        </member>
+        <member name="M:SQLServerDBInfo.Resources.GetText(System.String)">
+            <summary>
+            获取嵌入的文本资源
+            </summary>
+            <param name="name">文本资源名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQLServerDBInfo.ExtendMethod.Deserialize(System.Byte[])">
+            <summary>
+            将字节数组发序列化成对象
+            </summary>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQLServerDBInfo.ExtendMethod.Serialize(SQLServerDBInfo.SQLStruct)">
+            <summary>
+            将对象序列化成字节数组
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

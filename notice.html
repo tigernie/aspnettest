@@ -1,0 +1,77 @@
+﻿<!DOCTYPE HTML "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>最新动态</title>
+    <link href="/styles/reset.css" type="text/css" rel="stylesheet" />
+    <link href="/styles/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main02">
+        <!--头部-->
+        <div class="header">
+            <div class="logo"><img src="/images/index/logo.jpg" /></div>
+        </div>
+        <!--头部 end-->
+        <div class="left">
+            <!--导航-->
+            <div class="menu02">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="centerDescription.html">中心简介</a></li>
+                    <li><a href="examDescription.html">考试简介</a></li>
+                    <li class="hover"><a href="list.html?type=news">最新动态</a></li>
+                    <li><a href="list.html?type=exams">考试公示</a></li>
+                    <li><a href="list.html?type=videos">考试流程演示</a></li>
+                    <li><a href="list.html?type=manuals">培训专栏</a></li>
+                    <li><a href="contactus.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!--导航 end-->
+            <!--联系我们-->
+            <div class="contact02">
+                <em>技术支持：</em><br />
+                <span>010-878782734</span><br />
+                <em>考务管理：</em><br />
+                <span>010-878782735</span>
+            </div>
+            <!--联系我们 end-->
+        </div>
+
+        <!--right-->
+        <div class="right">
+            <div class="t2">最新动态 <span>当前位置：<a href="/index.html">首页</a> -><a href="list.html?type=news">最新动态</a> </span></div>
+            <div class="ditailed">
+                <dl>
+                    <dt id="title"></dt>
+                    <dd id="content">
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--right end-->
+    </div>
+    <!--主体-->
+    <!--主体 end-->
+    <div class="footer">
+        版权所有：© 2013-2015 中国人民银行
+    </div>
+    </div>
+
+    <script src="scripts/jquery-1.7.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <script>
+        $(function () {
+            var id = QueryString('id');
+            $.post('/PublicPlat.asmx/GetNote', { id:id}, function (data) {
+                $('#title').html(data.title);
+                $('#content').html(data.content);
+            });
+
+        })
+
+    </script>
+
+</body>
+</html>

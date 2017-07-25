@@ -1,0 +1,1 @@
+"Z:\工作\项目\信息技术考试系统_dotNet\项目\tools\自动更新（数据库自动更新部分）\autoUpdate_DB\autoUpdate_DB\bin\Release\autoUpdate_DB.exe" 3.7.0513.044 3.0.0911.1708 "Z:\工作\项目\信息技术考试系统_dotNet\项目\tools\自动更新（数据库自动更新部分）\autoUpdate_DB\autoUpdate_DB\bin\Release"

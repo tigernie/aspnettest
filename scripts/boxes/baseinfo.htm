@@ -1,0 +1,102 @@
+﻿<dl class="box">
+    <dt id="dt-submit"><b>考试基本信息</b></dt>
+    <dd class="popup_body">
+        <form action="javascript:;" method="post" id="form">
+            <dl>
+                <dt>考试名称：</dt>
+                <dd><input type="text" name="name" value="" size="50" /></dd>
+            </dl>
+            <dl>
+                <dt>考试日期：</dt>
+                <dd><input type="text" name="start" value="" size="12" class="Wdate" onfocus="WdatePicker()" /> --- <input type="text" name="end" value="" size="12" class="Wdate" onfocus="WdatePicker()" /></dd>
+            </dl>
+            <dl>
+                <dt>考试时长：</dt>
+                <dd><input type="text" name="length" value="" size="4" /> 分钟</dd>
+            </dl>
+             <dl>
+                <dt>编排方式：</dt>
+                <dd><label><input type="radio" name="arrange" value="1" checked="checked" />随机编排</label>
+                     <label style="display:none"><input type="radio" name="arrange" value="2" />按班级编排</label>
+                     <label><input type="radio" id="newArrange" name="arrange" value="3" />按班级编排</label>
+                </dd>
+            </dl>
+            <dl>
+                <dt>提前交卷限制：</dt>
+                <dd><input type="text" name="handin" value="" size="4" /> 例如：设定10分钟交卷限制，表示开考后10分钟内不能交卷。</dd>
+            </dl>
+            <dl id="lateLimit">
+                <dt>迟到时间限制：</dt>
+                <dd><input type="text" name="late" value="" size="4" /> 例如：设定10分钟迟到限制，表示迟到10分钟后不能进入考试。</dd>
+            </dl>
+            <dl>
+                <dt>考卷方案：</dt>
+                <dd>
+                    <span id="radio_group_schemeType">
+                        <label><input type="radio" name="schemeType" value="2" checked="checked" />随机卷</label>
+                        <label><input type="radio" name="schemeType" value="1" />统一卷</label>
+                    </span>
+                    <div style="margin-top:.5em">
+                        <input type="text" name="schemeName" value="" size="40" readonly="readonly" />
+                        <button type="button" class="common">选取方案</button>
+                        <input type="hidden" name="schemeId" value="" />
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>登录方式</dt>
+                <dd>
+                    <label><input type="radio" name="loginType" value="1" checked="checked" />考号加密码登录</label>
+                    <label><input type="radio" name="loginType" value="2" />身份证号登录</label>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>岗位</dt>
+                <dd>
+                   <select name="position">
+                       <option value="1">临柜</option>
+                       <option value="2">清分</option>
+                       <option value="3">鉴定</option>
+                       <option value="4">管理</option>
+                   </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>币种</dt>
+                <dd>
+                    <select name="currency">
+                        <option value="1">本币</option>
+                        <option value="2">本外币</option>
+                    </select>
+                </dd>
+            </dl>
+
+            <dl id="disorder" style="display:none">
+                <dt>随机题序：</dt>
+                <dd><input type="hidden" name="disorder" id="disorder-id" value="true" /><label><input type="checkbox" checked="checked" id="disorder-id-trigger" onclick="$('#disorder-id').val(this.checked)" />使用</label></dd>
+            </dl>
+            <dl>
+                <dt>开启报名：</dt>
+                <dd><input type="hidden" name="registerIsOpen" id="registerIsOpen" value="true" /><label><input type="checkbox" checked="checked" id="registerIsOpen-trigger" onclick="$('#registerIsOpen').val(this.checked)" />开启</label></dd>
+            </dl>
+
+            <dl>
+                <dt>是否乱序编排：</dt>
+                <dd><input type="hidden" name="randomArrange" id="randomArrange" value="true" /><label><input type="checkbox" checked="checked" id="randomArrange-trigger" onclick="$('#randomArrange').val(this.checked)" />开启</label></dd>
+            </dl>
+            <dl>
+                <dt>考试须知：</dt>
+                <dd><textarea cols="60" rows="5" name="description" style="width:445px"></textarea></dd>
+            </dl>
+            <dl style="display:none">
+                <dt>附加文件：<input type="hidden" name="attachment" id="attachment" value="" /></dt>
+                <dd><iframe id="attachment_iframe" src="about:_blank" frameborder="0" width="400" height="24"></iframe></dd>
+            </dl>
+            <dl id="dl-submit">
+                <dt>&nbsp;</dt>
+                <dd><button type="submit" class="submit">保存</button></dd>
+            </dl>
+        </form>
+    </dd>
+</dl>

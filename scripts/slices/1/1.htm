@@ -1,0 +1,34 @@
+﻿<form action="javascript:;" method="post" id="step-1-1">
+    <dl>
+        <dt>难度比例：</dt>
+        <dd><label>容易题：<input onblur="checkNumValue(this)" name="txtEasy" type="text" id="txtEasy" value="" size="3" maxlength="3" /> %，</label> <label>中等题：<input onblur="checkNumValue(this)" name="txtMiddle" type="text" id="txtMiddle" value="" size="3" maxlength="3" /> %，</label> <label>难题：<input onblur="checkNumValue(this)" name="txtDiff" type="text" id="txtDiff" value="" size="3" /> %</label></dd>
+    </dl>
+    <dl>
+        <dt>题型及分值：</dt>
+        <dd>
+            <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list" align="center" id="mmlist">
+            </table>
+        </dd>
+    </dl>
+    <dl>
+        <dt>题分误差：</dt>
+        <dd><input type="text" name="accuracy" id="accuracy" value="" size="2" maxlength="2" /></dd>
+    </dl>
+    <dl>
+        <dt>优先选项：</dt>
+        <dd>
+            <label><input type="radio" name="prior" id="prior" value="true" />知识点优先</label>
+            <label><input type="radio" name="prior" value="false" />难度优先</label>
+        </dd>
+    </dl>
+    <dl>
+        <dt>错题优先：</dt>
+        <dd><label><input type="checkbox" name="wrong" value="true" xvalue="false" />优先选取错误率比较高的试题</label></dd>
+    </dl>
+</form>
+<script type="text/javascript">
+    function calc(x) {
+        var s = $('input,span.numshow', $(x).parents('tr:first')[0].cells[1]);
+        s[2].innerHTML = s[1].value * s[0].value;
+    }
+</script>

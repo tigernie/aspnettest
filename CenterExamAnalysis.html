@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/common.js" type="text/javascript"></script>
+    <script src="scripts/TabSet/gzy.tabset.v3.js"></script>
+    <script src="scripts/lib/teacher.js" type="text/javascript"></script>
+    <script src="scripts/lib/center.js"></script>
+    <script src="scripts/Tree/gzy.tree.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="head problib" style="background: url(../images/teacher.result.jpg);">
+            <p>
+                <a href="javascript:;" class="user">管理员</a> <a href="../teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a><a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+        <ul class="mtabs">
+            <li><a href="javascript:;">分数概况</a></li>
+            <li><a href="javascript:;">单位排名</a></li>
+            <li><a href="javascript:;">成绩分布</a></li>
+            <li><a href="javascript:;">难度分析</a></li>
+            <li><a href="javascript:;">知识点得分</a></li>
+            <li><a href="javascript:;" id="exportScoreAnalysis">导出成绩质量分析</a></li>
+        </ul>
+        <div class="wide">
+            <div class="generalInfo">
+                <div class="arrowTitle paperDifficulty">
+                </div>
+
+                <table id="paperDifficulty" class="list"></table>
+
+                <div class="arrowTitle StandardDeviation">
+                </div>
+
+                <table id="StandardDeviation" class="list"></table>
+            </div>
+            <div class="schoolRank">
+
+                <table id="schoolRank" class="list"></table>
+
+            </div>
+            <div class="resultsDistribution">
+                <div id="schoolSelectorContainer" class="schoolSelectorContainer"></div>
+                <div id="container" class="rightContainer"></div>
+            </div>
+            <div class="difficultyAnalysis">
+                <select id="kpSelector"></select>
+                <select id="type"></select>
+                <table id="probDifficulty" class="list"></table>
+            </div>
+            <div class="kpAnalysis">
+                <div id="kpAnalysis_schoolSelector" class="schoolSelectorContainer"></div>
+                <div class="rightContainer">
+                <table id="kpScore" class="list"></table></div>
+            </div>
+            <div class="kpAnalysis">
+            </div>
+        </div>
+    </div>
+    <script src="scripts/lib/problib.js"></script>
+    <script src="scripts/PopWindow/gzy.popup.js"></script>
+    <script src="scripts/viewProblemContent.js"></script>
+    <script src="scripts/lib/paperAnalysis.js"></script>
+    <script src="scripts/lib/paperAnalysis.ui.js"></script>
+    <script src="scripts/highCharts/highcharts.js"></script>
+    <script src="scripts/highCharts/modules/exporting.js"></script>
+    <script src="scripts/scoreChart.js"></script>
+    <link href="styles/center.css" rel="stylesheet" />
+        <link href="scripts/PopWindow/gzy.popup.css" rel="stylesheet" />
+</body>
+</html>

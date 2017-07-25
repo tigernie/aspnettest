@@ -1,0 +1,360 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>报名管理</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="script.ashx?teacher" type="text/javascript"></script>
+    <script src="scripts/lib/teacher.ui.js"></script>
+    <script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+    <script src="scripts/lib/center.js"></script>
+    <link href="scripts/easyui/themes/metro/easyui.css" rel="stylesheet" />
+    <!--<link href="scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />-->
+    <link href="scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <script src="scripts/easyui/jquery.easyui.min.js"></script>
+    <style>
+        .bind {
+        }
+
+            .bind td {
+                height: 30px;
+            }
+
+            .bind .title {
+                width: 200px;
+                text-align: center;
+            }
+        #infoTable table td {
+        border:1px solid black;
+         padding:0;
+         margin:0;
+         border-collapse:collapse;
+        }
+        #infoTable table {
+        
+         border-collapse:collapse;
+        }
+
+    </style>
+    <link href="styles/center.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <!--[if lte ie 7]>
+    <style type="text/css">
+    .badie { padding:4px 4px 4px 24px; font-size:14px; background: #ffffe0 url("images/warning.png") 4px center no-repeat; border-bottom:2px solid silver; }
+    body { background-position-y: 24px; }
+    </style>
+    <div class="badie">为了保证各项功能的正常使用，请使用IE8或以上版本的IE浏览器。</div>
+    <![endif]-->
+    <div class="body">
+        <div id="msg_checkOnline" style=" display:none;">
+        </div>
+        <div class="head baoming">
+            <p>
+                <a href="javascript:;" class="user">超级管理员</a>
+                <a href="teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a>
+                <a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+        <div class="wide">
+            <div style="margin:10px;display:inline-block">
+                选择考试：<select id="examSelecotr"></select>
+                <a id="allExamcenterMap" href="javascript:;" target="_blank">考点人数总览</a>
+                <a id="realTimeMap" href="javascript:;" target="_blank">实时监控</a>
+            </div>
+
+            <div id="infoTable" class="overView_examInfo">
+                <table class="infoTable" cellpadding="0" cellspacing="0" style="display:none;">
+                    <tr>
+                        <td class="header">
+                            <label>基本信息:</label>
+                        </td>
+                        <td>
+                            <label>考点:</label><a id="centerCount" href="javascript:;">128</a>个
+                        </td>
+                        <td>
+                            <label>考场:</label><a id="roomCount" href="javascript:;">248</a>个
+                        </td>
+                        <td>
+                            <label>场次:</label><a id="sessionCount" href="javascript:;">12958</a>场
+                        </td>
+                        <td>
+                            <label>场次时间段:</label><a id="sessionTimeCount" href="javascript:;">5</a>场
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="header rowspan">
+                            <label>数据包:</label>
+                        </td>
+                        <td>
+                            <label>考务包:</label>
+                        </td>
+                        <td>
+                            <label>已生成:</label><a id="generatedCount" href="javascript:;">248</a>个
+                        </td>
+                        <td>
+                            <label>已下载:</label><a id="downloadedCount" href="javascript:;">168</a>个
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>结果包:</label>
+                        </td>
+                        <td>
+                            <label>已上传:</label><a id="uploadedCount" href="javascript:;">0</a>个
+                        </td>
+                        <td>
+                            <label>已导入:</label><a id="importedCount" href="javascript:;">15</a>个
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="header">
+                            <label>参考学生:</label>
+                        </td>
+                        <td>
+                            <label>考生数:</label><a id="studentCount" href="javascript:;">25648</a>人
+                        </td>
+                        <td>
+                            <label>缺考:</label><a id="absentCount" style=" cursor: pointer; text-decoration: underline;" title="下载所有缺考学生名单" href="javascript:;">234</a>人
+                        </td>
+                        <td>
+                            <label>舞弊:</label><a id="cheatCount" href="javascript:;">16</a>人
+                        </td>
+                        <td>
+                            <label>手动交卷:</label><a id="manualSubmitCount" href="javascript:;">15689</a>人
+                        </td>
+                        <td>
+                            <label>强制交卷:</label><a id="autoSubmitCount" href="javascript:;">684</a>人
+                        </td>
+                        <td>
+                            <label>延时:</label><a id="delayCount" href="javascript:;">200</a>人
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="easyui-tabs" style="width:980px;height:auto">
+                <div title="考场信息" style="margin:5px;">
+                    <!--<form action="ExamRoomImport.ashx" method="post" id="upload1" target="upframe" enctype="multipart/form-data">
+                        <div id="important-student-container" style="width:113px; margin-bottom:10px; display:inline-block ;height:18px;overflow:hidden;background:url(/images/center/importExamRooms.jpg) no-repeat;text-align:right">
+                            <input type="file" name="file" id="import-student" onchange="mySubmit('upload1',this)" style="opacity:0;width:500px;cursor:pointer;border-left:500px solid red;border-bottom:100px solid red;height:22px;filter:alpha(opacity=0)" />
+                        </div>
+                        <input type="hidden" name="examId" />
+                        <a href="/systemFiles/考点考场导入模板.xlsx" target="_blank" style="vertical-align: top;font-size: 15px;">模板下载</a>
+                    </form>-->
+                    <table id="unAuditTable" class="easyui-datagrid" title="" style="width:970px;height:450px"
+                           data-options="rownumbers:true,singleSelect:false,isajaxEx:true,onLoadSuccess:'onloadSuccess',pagination:true,collapsible:true,url:'center.asmx/GetAllExamInfo',method:'get'">
+                        <thead>
+                            <tr>
+                                <!--<th data-options="field:'ck',checkbox:true">选择</th>-->
+                                <th data-options="field:'orgName',align:'center'">人民银行</th>
+                                <th data-options="field:'name',align:'center'">金融机构</th>
+                                <th data-options="field:'registerStudentsCount',align:'center'">报名考生数</th>
+                                <th data-options="field:'passed',align:'center'">通过审核考生数</th>
+                                <th data-options="field:'theoryPassed',align:'center'">理论成绩合格数</th>
+                                <th data-options="field:'subPassed',align:'center'">实操成绩合格数</th>
+                                <th data-options="field:'totalPassed',align:'center'">合格数</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="auditDD"></div>
+    <p class="body"></p>
+    <div class="copyright">版权所有 © 2013-2015 中国人民银行</div>
+    <iframe id="upframe" name="upframe" style="display:none"></iframe>
+    <script src="scripts/common.js"></script>
+
+    <script>
+
+
+        function onloadSuccess() {
+            debugger;
+            var isOver = $("#examSelecotr").find("option:selected").attr('isOver');
+
+
+            var tds = $('#unAuditTable tbody tr').find('td')
+            if (isOver) {
+                tds.eq(3).hide();
+                tds.eq(4).hide();
+                tds.eq(5).show();
+                tds.eq(6).show();
+                tds.eq(7).show();
+            }
+            else {
+                tds.eq(3).show();
+                tds.eq(4).show();
+                tds.eq(5).hide();
+                tds.eq(6).hide();
+                tds.eq(7).hide();
+            }
+
+        }
+
+        $(function () {
+            $('.easyui-datagrid').datagrid({
+                onLoadSuccess: function (data) {
+                    var pager = $(this).datagrid('getPager');
+                    pager.pagination({
+                        beforePageText: '第',//页数文本框前显示的汉字
+                        afterPageText: '页    共 {pages} 页',
+                        displayMsg: '当前显示 {from} - {to} 条记录   共 {total} 条记录',
+                    });
+                    if (data.allTotal != null)
+                        $(this).datagrid("getPanel").panel("setTitle", "总人数：" + data.allTotal);
+                }
+            });
+
+            $('#examSelecotr').html('<option>请选择考试</option>');
+
+            $.post('center.asmx/GetExams', {}, function (result) {
+                $.each(result, function (i, item) {
+                    $('#examSelecotr').append('<option value="' + item.id + '" isOver="' + (item.isOver ? "true" : "false") + '">' + item.name + '</option>');
+                });
+            });
+
+            $('#examSelecotr').change(function () {
+                var examId = $(this).val();
+                examId = examId ? examId : 0;
+                refreshOverView(examId);
+                refreshMap(examId);
+                refreshGrid($(this).attr('isOver')=='true');
+                $('input[name="examId"]').val(examId);
+            });
+
+            initGridToolBar();
+        });
+
+        function refreshMap(examId) {
+            $('#allExamcenterMap').attr('href', '/scripts/boxes/areaStudents.htm?examId=' + examId);
+            $('#realTimeMap').attr('href', '/scripts/boxes/centermonitor.htm?examId=' + examId);
+        }
+
+
+        function refreshOverView(id) {
+            $('table.infoTable').show();
+            center.getOverViewInfo(id, function (data) {
+                $('#centerCount').html(data.centerCount);
+                $('#roomCount').html(data.examRoomCount);
+                $('#sessionCount').html(data.sessionTimeCount);
+                $('#sessionTimeCount').html(data.examRoomCount);
+                $('#studentCount').html(data.examstudentCount);
+                $('#downloadedCount').html(data.downloadedCount);
+                $('#generatedCount').html(data.generatedCount);
+                $('#uploadedCount').html(data.uploadedCount);
+                $('#importedCount').html(data.importedCount);
+                $('#absentCount').html(data.absentCount);
+                $('#cheatCount').html(data.cheatCount);
+                $('#manualSubmitCount').html(data.manualSubmitCount);
+                $('#autoSubmitCount').html(data.autoSubmit);
+                $('#delayCount').html(data.delayCount);
+                $('#overView_loading').toggle(false);
+                $('#infoTable').slideDown(1500);
+            });
+
+
+        }
+
+        function operationFormatter(val, row) {
+            if ($('#submitNote').html() != '提交成功' && row.isSelfExamcenter)
+                return '<a bookExamTime href="javascript:;" onclick="showBindWindow(' + row.id + ')">预约场次时间</a>';
+            return '';
+        }
+
+        function bindInfoFormatter(val, row) {
+            var text = '';
+            $.each(val, function (i, value) {
+                if (i > 0)
+                    text += '<br />';
+                text += value;
+            });
+            return text;
+        }
+
+        function initGridToolBar() {
+
+            $('.easyui-datagrid[audit="unaudit"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-ok',
+                    text: '通过',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="unaudit"]');
+                        audit(ids.toString(), true);
+                    }
+                }, '-', {
+                    iconCls: 'icon-no',
+                    text: '拒绝',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="unaudit"]');
+                        audit(ids.toString(), false);
+                    }
+                }]
+            });
+
+            $('.easyui-datagrid[audit="failed"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-ok',
+                    text: '通过',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="failed"]');
+                        audit(ids.toString(), true);
+                    }
+                }]
+            });
+
+            $('.easyui-datagrid[audit="passed"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-no',
+                    text: '拒绝',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="passed"]');
+                        audit(ids.toString(), false);
+                    }
+                }]
+            });
+
+
+        }
+
+        function getSelectedIds(selector) {
+            var rows = $(selector).datagrid('getSelections');
+            var ids = [];
+            $.each(rows, function () {
+                ids.push(this.id);
+            });
+            return ids;
+        }
+
+
+        function refreshGrid(isOver) {
+            var examId = $('#examSelecotr').val();
+            examId = examId ? examId : 0;
+            $('.easyui-datagrid').each(function () {
+                $(this).datagrid('load', {
+                    exid: examId,
+                    page: 1,
+                    pageSize:15
+                });
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
+

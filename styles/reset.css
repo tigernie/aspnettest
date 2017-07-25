@@ -1,0 +1,75 @@
+@charset "utf-8";
+/** 
+**/
+body{margin:0;padding:0;color:#4c4c4c;line-height:22px; font-size:12px;font-family:Tahoma,Arial,"微软雅黑"}
+div,span,p,ul,ol,li,dd,h1,h2,h3,h4,h5,h6,dt,dl,form,input,textarea,blockquote,th,td{padding:0px;margin:0px;}
+select,input{padding:1px 0;}
+label {cursor:pointer}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol,li{list-style:none;}
+li{ line-height:24px;}
+em { font-style:normal}
+a{text-decoration:none;color:#4c4c4c;}
+a:hover{text-decoration:underline; color:#0000ff}
+img{ border:none;}
+table, th, td {border-collapse: collapse;border-spacing: 0;}
+	/*文字 文字对齐方式*/
+.tc{text-align:center;}
+.tl{text-align:left;} 
+.tr{text-align:right;}
+.fb{font-weight:bold;}
+	/*字体 颜色*/
+.blue   { color:#06c}
+.brown  { color:#666}
+.gray   { color:#999}
+.green  { color:#2d9b01}
+.orange { color:#f60}
+.red    { color:#91130d}
+.white	{ color:#fff}
+.light  { color:#999}
+.grey   { color:#999}
+.grey a   { color:#474747}
+.black { color:#545151;}
+.g{ color:#1c1c1c;}
+	/*浮动 位置*/
+.clear{ clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:both;}
+.mt20{ margin-top:20px}
+.mt17{ margin-top:17px}
+.mt10{ margin-top:10px}
+.mr20{ margin-right:20px;}
+.ml10{ margin-left:10px;}
+.mr10{ margin-right:10px;}
+.mr15{ margin-right:15px;}
+.mr20{ margin-right:20px;}
+.w990{ width:990px;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+/*--图标 按钮--*/
+.home-ico{background:url(../img/ico/home-ico.png) 0 9px no-repeat; width:18px}
+b.ico{ display:inline-block; float:left; margin-right:5px;width:16px; height:23px }
+b.doc{background:url(../img/ico/doc.gif) 0 4px no-repeat;}
+b.ppt{background:url(../img/ico/ppt.gif) 0 4px no-repeat}
+b.pdf{background:url(../img/ico/pdf.gif) 0 4px no-repeat}
+b.rar{background:url(../img/ico/rar.png) 0 4px no-repeat}
+b.video{background:url(../img/ico/video.png) 0 4px no-repeat}
+
+/*--分页--*/
+.nextPage{margin:15px 0; overflow:hidden; width:100%}
+.nextPage dl{float:left;width:100%;line-height:14px}
+.nextPage dl li{float:left;}
+.nextPage dl .turn{float:right;}
+.nextPage dl dd p{float:left;margin:0px 3px;border:1px #d6d6d6 solid;padding:3px 0;}
+.nextPage dl dd p a{padding:3px 5px; text-decoration:none}
+.nextPage dl dd p a:hover{background-color:#dbeffe; color:#518888}
+.nextPage dl dd .active{background-color:#dbeffe;}
+.nextPage dl dd .active a{ color:#518888}
+.nextPage dl dd .input{width:20px;border:1px solid #aec4d1;margin:0px 3px;}
+.nextPage dl dd .button{cursor:pointer;width:38px;height:20px;}
+#pager {padding-bottom: 30px;padding-top: 20px;clear: both;overflow: hidden;text-align: center;}
+#pager em, #pager span {margin-right: 1px;}
+#pager em {padding: 4px 10px;}
+#pager a:hover, #pager em {color: #fff;border: 1px solid #d96261;background: #d96261;text-decoration: none;}
+#pager a {height: 14px;line-height: 14px;padding: 4px 10px;color: #a21c1b;border: 1px solid #ffc9c9;cursor: pointer;}

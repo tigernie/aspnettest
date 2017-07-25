@@ -1,0 +1,232 @@
+﻿<style>
+    #examCenterOrgs td {
+      height:40px;
+    
+    }
+    #rooms {
+         border-collapse:collapse;
+         width:580px;
+    }
+    #rooms td {
+         border:1px solid black;
+         height:20px;
+    }
+        #rooms input {
+          width:99%;
+        }
+
+    .title {
+      text-align:right;
+    }
+
+</style>
+
+<div>
+    <table id="examCenterOrgs">
+        <tr>
+            <td class="title">考点名称：</td>
+            <td><input type="text" id="examCenterOrgName" /></td>
+            <td class="title">详细地址：</td>
+            <td><input type="text" id="address" /></td>
+        </tr>
+        <tr>
+            <td class="title">考点管理员：</td>
+            <td><input type="text" id="admin" /></td>
+            <td class="title">考点管理员电话：</td>
+            <td><input type="text" id="phone" /></td>
+        </tr>
+        <tr>
+            <td class="title">考点管理员Email：</td>
+            <td><input type="text" id="email" /></td>
+            <td class="title">考点管理员QQ：</td>
+            <td><input type="text" id="qq" /></td>
+        </tr>
+        <tr>
+            <td class="title">考场：</td>
+            <td colspan="3">
+                <button id="addRoom">添加考场</button>
+                <table id="rooms" cellpadding="0" cellspacing="0">
+                    <thead>
+                       <tr>
+                           <td>
+                               考场名称
+                           </td>
+                           <td>
+                               设备数
+                           </td>
+                           <td>
+                               管理员
+                           </td>
+                           <td>
+                               电话
+                           </td>
+                           <td style="width:100px">
+                               Email
+                           </td>
+                           <td>
+                              QQ
+                           </td>
+                           <td style="width:40px; text-align:center;">
+                               操作
+                           </td>
+                       </tr>    
+                    </thead>
+                    <tbody>
+
+
+                    </tbody>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" id="centerExamCenterOrgId" />
+</div>
+
+<script>
+
+    $('#addRoom').click(function () {
+        addRoom();
+    });
+
+    $('#rooms').on('click', 'a[name="delete"]', function () {
+        $(this).parent().parent().remove();
+
+    });
+
+    function addRoom(room) {
+
+        var count = $('#rooms tbody tr').length;
+        var html = '<tr roomId="' + (room ? room.Id : '') + '">\
+            <td><input name="roomName" type="text" disabled  value="' + (room ? room.Name : '考场' + (++count)) + '" /></td>\
+            <td><input name="computersCount" type="text"  value="' + (room ? room.ComputersCount : '') + '" /></td>\
+            <td><input name="admin" type="text"  value="' + (room ? room.Admin : '') + '" /></td>\
+            <td><input name="phone" type="text" value="' + (room ? room.Phone : '') + '"  /></td>\
+            <td><input name="email" type="text"  value="' + (room ? room.Email : '') + '" /></td>\
+            <td><input name="qq" type="text" value="' + (room ? room.QQ : '') + '"  /></td>\
+            <td><a href="javascript:;" name="delete">删除</a></td>\
+            </tr>';
+        $('#rooms').append(html);
+
+        NumberBox($('#rooms tr').last().find('[name="computersCount"]'), { "max": 400, "min": 0, "step": 1 });
+    }
+
+    function getExamCenterOrgInfo() {
+        var examCenterOrgName = $.trim($('#examCenterOrgName').val());
+        if (!examCenterOrgName)
+            throw new Error('请填写考点名称');
+
+        var address = $.trim($('#address').val());
+        if (!address)
+            throw new Error('请填写地址');
+
+        var admin = $.trim($('#admin').val());
+        if (!admin)
+            throw new Error('请填写考点管理员');
+
+        var email = $.trim($('#email').val());
+        if (!email)
+            throw new Error('请填写考点管理员email');
+        if(!checkEmail(email))
+            throw new Error('考点管理员email格式不正确');
+
+        var qq = $.trim($('#qq').val());
+        if (!qq)
+            throw new Error('请填写考点管理员qq');
+
+
+
+        var phone = $.trim($('#phone').val());
+        if (!phone)
+            throw new Error('请填写考点管理员电话');
+
+        var examCenterOrgInfo = {
+            id:$('#centerExamCenterOrgId').val(),
+            name: examCenterOrgName,
+            address: address,
+            admin: admin,
+            qq: qq,
+            phone: phone,
+            email: email,
+            rooms: []
+        };
+
+        var rooms = [];
+        var rowIndex = 0;
+        $('#rooms tr').each(function () {
+            if (rowIndex++ > 0) {
+                var name = $.trim($(this).find('input[name="roomName"]').val());
+                if(!name)
+                    throw new Error('请填写考场名称');
+
+                var computersCount = $.trim($(this).find('input[name="computersCount"]').val());
+                if (!computersCount)
+                    throw new Error('请填写' + name + '的设备数');
+
+                var admin = $.trim($(this).find('input[name="admin"]').val());
+                //if (!admin)
+                //    throw new Error('请填写' + name + '的管理员');
+
+                var phone = $.trim($(this).find('input[name="phone"]').val());
+                //if(!phone)
+                //    throw new Error('请填写' + name + '的电话');
+                
+                var email = $.trim($(this).find('input[name="email"]').val());
+                //if (!email)
+                //    throw new Error('请填写' + name + '的电子邮箱');
+                if (email && !checkEmail(email))
+                    throw new Error(name + '的电子邮箱格式不正确');
+
+
+
+                var qq = $.trim( $(this).find('input[name="qq"]').val());
+
+                var room = {
+                    id: $(this).attr('roomId'),
+                    name: name,
+                    computersCount: computersCount,
+                    admin: admin,
+                    phone: phone,
+                    email: email,
+                    qq: qq
+                };
+                rooms.push(room);
+            }
+        });
+        examCenterOrgInfo.rooms = rooms;
+        return examCenterOrgInfo;
+    }
+
+
+
+    function init() {
+        $('#centerExamCenterOrgId').val(schoolId);
+        if (schoolId) {
+            $.getJSON('company.asmx/GetExamCenterOrg', { id: schoolId }, function (data) {
+                $('#examCenterOrgName').val(data.Name);
+                $('#address').val(data.Address);
+                $('#admin').val(data.Admin);
+                $('#email').val(data.Email);
+                $('#qq').val(data.QQ);
+                $('#phone').val(data.Phone);
+                $.each(data.Rooms, function () {
+                    addRoom(this);
+                });
+            });
+        }
+    }
+
+
+    $(function () {
+        init();
+    });
+
+    function checkEmail(email) {
+        var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        return reg.test(email);
+
+    }
+    
+
+</script>

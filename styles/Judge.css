@@ -1,0 +1,20 @@
+﻿  .lv_key{ width:90px; text-align:justify;}
+        .lv_value{ width:150px; text-align:left;  }
+        
+        .examitem { border:1px solid #d6d6d6; padding: 10px; margin-top: 10px; }
+        .examitem h4 { height: 32px; line-height:32px; background: url(images/exam-icon.gif) no-repeat; padding: 0 12px 10px 32px; margin-bottom: 10px; border-bottom: 1px dashed #d6d6d6;font-size:16px }
+        .examitem h4 label { float:right; line-height: 12px; font-weight: normal; padding:8px;}
+        .examitem.preopen { background-color:#fff8e1; }
+        .examitem.preopen h4 label { border:0px solid orange;font-size:14px }
+        .examitem.preopen h4 label span { color:orange; }
+        .examitem.opened { background-color:#e6f5de; }
+        .examitem.opened h4 label { border:0px solid #2f9000; font-size:14px}
+        .examitem.opened h4 label span { color:#2f9000; }
+        .examitem.closed h4 label { border:0px solid silver;font-size:14px }
+        .examitem.closed h4 label span { color: gray; }
+        .examitem input { border: 1px solid #89aacb; background: #e9f0f3; padding: 4px 10px; margin-top: 10px; white-space: nowrap; cursor: pointer; color:#015bc0; }
+        .examitem input.closed { border-color: #f6bf60; background: #ffeec4; color: #b95300; }
+        /*.wide .examitem:nth-child(2n+1) { background-color: #f3f3f3; }*/
+        .examitem input.disabled { color: silver; cursor: not-allowed; border-color: silver; background-color: #f6f6f6; }
+        ul.mtabs { border-bottom-width:0px;}
+

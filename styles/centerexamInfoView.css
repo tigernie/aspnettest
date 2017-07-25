@@ -1,0 +1,21 @@
+﻿
+
+input[type=button].centerviewBtn {  border-width:0px; background-image:url(/images/center/btn_bkgnd.gif); background-repeat:no-repeat; height:27px;width:72px; text-decoration:none; }
+input[type=button].centerviewBtn:hover { cursor:pointer; background-image:url(/images/center/btn_bkgnd_hover.gif) }
+div.centerexamInfoView { width:100%; border:1px solid #dddddd; }
+div.centerexamInfoView .centerExamView_title { text-align:center; height:51px; line-height:51px; background-image:url(/images/center/centerExamInfo_Title.gif); }
+div.centerexamInfoView .centerExamView_title a { float:right; margin-right:20px; font-size:12px; }
+div.centerexamInfoView .centerExamView_title a img { margin-right:5px;}
+div.centerexamInfoView .box { height:37px;line-height:37px; background-color:#fafafa; padding-left:11px; padding-right:11px;}
+div.centerexamInfoView .box .examCenterTitile { color:#002990; font-size:14px; font-weight:bold; }
+div.centerexamInfoView .box .examCenterCode { color:#002990; font-weight:bold;}
+div.centerexamInfoView .box .elseInfo { float:right;}
+div.centerexamInfoView .box .elseInfo span { margin-left:18px;}
+div.centerexamInfoView .box .elseInfo span label { color:#f56800;font-size:12px; margin:0px 8px;}
+div.centerexamInfoView .container {  }
+div.centerexamInfoView .container .examroominfo { background-image:url(/images/center/examroomTitle.gif); background-repeat:repeat-x; border-width:0px;height:45px;font-size:14px; padding:0px 11px; line-height:45px; }
+div.centerexamInfoView .container .examroominfo label { color:#6e6e6e;}
+div.centerexamInfoView .container .examroominfo .roomname label {  font-weight:bold;  color:black; }
+div.centerexamInfoView .container .examroominfo span { margin-right:45px; }
+div.centerexamInfoView .container  .dotline { height:10px;width:960px; background-image:url(/images/center/dot.gif); background-repeat:repeat-x; margin:0px 11px;}
+div.centerexamInfoView .container .centerexamviewTable {padding-left:10px; }

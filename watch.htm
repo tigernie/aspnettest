@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>监考</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/TabSet/gzy.tabset.v3.js"></script>
+<script src="script.ashx?teacher,watch,watch.ui" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/Menu/gzy.menu.js"></script>
+<script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+<style type="text/css">
+h4 { border: 1px solid #dedede; border-top-color: #9ed5f2; margin-bottom: 10px; text-align: center; font-size: 20px; padding: 10px; background: url(images/watch-exname-bg.gif) left top; }
+.leftpanel ul { margin: 1em .5em; list-style: none; padding-left: 5em; text-indent: -5em; }
+.leftpanel ul li { line-height: 1.8em; }
+
+.centerpanel ul { overflow: hidden; list-style: none; padding-bottom: 1px; }
+.centerpanel ul li { float: left; margin-bottom: -1px; margin-right: -1px; width: 97px; height: 58px; position: relative; }
+.centerpanel ul li a { border: 1px solid silver; position:absolute; font-size: 14px; text-align: center; line-height: 1.5em; width:95px; padding: 7px 0; text-decoration: none; }
+.centerpanel ul li a:hover { /*border: 1px solid skyblue;*/ background-color: whitesmoke; }
+.centerpanel ul li a em { border: solid 6px transparent; position: absolute; top: 0; +top: -1px; right: 0; font-size: 0; height: 0; line-height: 0; width: 0; }
+.centerpanel ul li a span { display: none; cursor: default; color: gray; font-size:12px; line-height:1em; margin-top: 0.5em; }
+.centerpanel ul li a:hover span { /*display: block;*/ }
+
+.centerpanel ul li a.online_false em { border-color: silver silver transparent transparent; }
+.centerpanel ul li a.online_true em { border-color: blue blue transparent transparent; }
+
+.centerpanel ul li a.status_unstart { color: gray; }
+.centerpanel ul li a.status_testing { color: green; }
+.centerpanel ul li a.status_testpreparing { color: orange; }
+.centerpanel ul li a.status_over { color: blue; }
+.centerpanel ul li a.status_forbidden { color: red; }
+.centerpanel ul li a.status_encrypted { color: darkred; }
+.centerpanel ul li a i { visibility: hidden; }
+.centerpanel ul li a.cheat_true i { visibility: visible; position: absolute; right: 12px; top: 0px; font-size: 0; height: 0; border: 6px solid red; border-color: red red transparent transparent; }
+.centerpanel ul li a u { font-size: 12px; line-height: 12px; position: absolute; left: 0; top: 0; text-decoration: none; color: blue; }
+.centerpanel ul li a.delay_0 u { visibility: hidden; }
+
+.one_info { }
+.one_info table { width: 100%; line-height: 2em; background-color: #e0e0e0; }
+.one_info table th { font-weight: normal; background-color: #f4f4f4; }
+.one_info table td { background-color: white; }
+.one_info .wd_list div { float: left; width: 25%; text-align: center; border-right: 1px solid #e0e0e0; margin-right: -1px; border-bottom: 1px solid #e0e0e0; margin-bottom: -1px; }
+.one_info .wd_list div span { display: block; border-top: 1px solid #e0e0e0; margin-top: -1px; }
+    .openClassExam {display:none; }
+    .openBtn { background-image:url(/images/openExam_normal.png); width:165px;height:36px; border-style:none; cursor:pointer; }
+    .openBtn:hover { background-image:url(/images/openExam_hover.png); }
+</style>
+</head>
+<body>
+<div class="body">
+    <div class="head watch"><p>
+		<a href="javascript:;" class="user">超级管理员</a>
+		<a href="teacher.htm" class="home">返回首页</a>
+		<a href="javascript:;" class="setting">系统管理</a>
+		<a href="javascript:;" class="exit">注销</a>
+	</p></div>
+    <ul class="mtabs">
+        <li><a href="javascript:;">考试列表</a></li>
+        <li><a href="javascript:;">正在监考</a></li>
+    </ul>
+    <div class="mpanel eslist">
+        <table border="0" cellpadding="0" cellspacing="0" id="eslist" class="list">
+		</table>
+    </div>
+    <div class="mpanel watcher">
+        <h4 id="_exname"></h4>
+        <div class="leftpanel"><ul>
+            <li class="openClassExam"><b id="open"><input type="button" class="openBtn" title="开启考试后考生才能进入考试" /></b></li>
+            <li>开考时间：<b id="_exstart">--</b></li>
+            <li>结束时间：<b id="_exend">--</b></li>
+            <li>剩余时间：<b id="_exleft">--</b></li>
+        </ul><ul>
+            <li class="examClasses">参考班级：<b id="_exclass">--</b></li>
+            <li>考生人数：<b id="_exall">--</b>人</li>
+            <li>实到人数：<b id="_exreal">--</b>人</li>
+            <li>已交卷数：<b id="_exdone">--</b>人</li>
+        </ul><ul>
+            <li>自动刷新：<span id="_interval" class="radiogroup">
+                <label><input type="radio" name="interval" value="2" />快</label><br /><label><input type="radio" name="interval" value="5" checked="checked" />中</label><br /><label><input type="radio" name="interval" value="10" />慢</label></span>
+            </li>
+        </ul><ul>
+            <li>全部延时：<a href="javascript:;" id="delayAll">延时</a></li>
+            <!--<li>提前收卷：<a href="javascript:;" id="handinAll">收卷</a></li>-->
+        </ul><ul>
+            <li>图示说明：<em style="border:6px solid;vertical-align:top;font-size:0;line-height:0;height:0;width:0;overflow:hidden;border-color:silver silver transparent transparent;display:inline-block;margin-top:5px;"></em>&nbsp;不在线<br />
+                <em style="border:6px solid;vertical-align:top;font-size:0;height:0;width:0;overflow:hidden;border-color:blue blue transparent transparent;display:inline-block;margin-top:5px"></em>&nbsp;在线<br />
+                <em style="border:6px solid;vertical-align:top;font-size:0;height:0;width:0;overflow:hidden;border-color:red red transparent transparent;display:inline-block;margin-top:5px"></em>&nbsp;作弊<br />
+                <font color="darkred">未开启</font><br />
+                <font color="gray">未登录</font><br />
+                <font color="orange">准备进入答题</font><br />
+                <font color="green">正在答题中</font><br />
+                <font color="blue">已交卷</font><br />
+                <font color="red">被禁考</font><br />
+                <font color="#cc00cc">作弊</font>
+            </li>
+        </ul></div>
+		<div class="centerpanel"><ul id="_stlist"></ul></div>
+    </div>
+</div>
+<p class="body"></p>
+</body>
+<script src="scripts/Drag/gzy.drag.js"></script>
+
+</html>

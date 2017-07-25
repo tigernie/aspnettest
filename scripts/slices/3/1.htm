@@ -1,0 +1,27 @@
+﻿<form action="javascript:;" method="post" id="step-3-1">
+    <dl>
+        <dt>试卷总分：</dt>
+        <dd><input onblur="checkNumValue(this)" name="PaperScore" onfocus="select()" type="text" id="PaperScore" value="" size="3" maxlength="3" /></dd>
+    </dl>
+    <dl>
+        <dt>学科:</dt>
+        <dd><select id="subject" style="width:120px;margin-bottom:10px;"><option>学科</option></select></dd>
+    </dl>
+    <dl>
+        <dt>考试范围：</dt>
+        <dd id="kpids">
+        </dd>
+    </dl>
+    <dl>
+        <dt>难度比例：</dt>
+        <dd><label>容易题：<input onblur="checkNumValue(this)" onfocus="select()" name="txtEasy" type="text" id="txtEasy" value="" size="3" maxlength="3" />%，</label> <label>中等题：<input onblur="checkNumValue(this)" onfocus="select()" name="txtMiddle" type="text" id="txtMiddle" value="30" size="3" maxlength="3" />%，</label> <label>难题：<input onblur="checkNumValue(this)" onfocus="select()" name="txtDiff" type="text" id="txtDiff" value="20" size="3" />%</label></dd>
+    </dl>
+    <dl>
+        <dt>模糊出卷：</dt>
+        <dd><label><input type="checkbox" id="vague" value="true" xvalue="false" />当题分和规定题分难度相差不多时，也将出卷成功</label></dd>
+    </dl>
+    <dl>
+        <dt>错题优先：</dt>
+        <dd><label><input type="checkbox" id="wrong" value="true" xvalue="false" />优先选取错误率比较高的试题</label></dd>
+    </dl>
+</form>

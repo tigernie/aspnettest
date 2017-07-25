@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title></title>
+<script src="../jquery-1.7.min.js"></script>
+<script src="gzy.tree.v2.js"></script>
+<script>
+    var json = {
+        text: "根节点", id: 0, items: [
+            {
+                text: "枝节点", id: 1, items: [
+                    {
+                        text: "叶节点", id: 2
+                    }, {
+                        text: "叶节点", id: 3
+                    }, {
+                        text: "叶节点", id: 4
+                    }
+                ]
+            }, {
+                text: "枝节点", id: 5, items: [
+                    {
+                        text: "叶节点", id: 6
+                    }, {
+                        text: "叶节点", id: 7
+                    }, {
+                        text: "叶节点", id: 8
+                    }
+                ]
+            }
+        ]
+    };
+
+    $(function () {
+        new gzy.tree({
+            source: { data: json }
+        }).renderTo('body');
+    });
+</script>
+<style>
+    .tree { width: 500px; padding: 10px; border: 1px solid red; }
+</style>
+</head>
+<body>
+</body>
+</html>

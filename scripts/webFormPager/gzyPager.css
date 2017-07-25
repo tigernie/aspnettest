@@ -1,0 +1,17 @@
+﻿div.gzy_pager { PADDING-RIGHT: 6px; PADDING-LEFT: 0px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; COLOR: #313031; PADDING-TOP: 4px; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,Sans-Serif; BACKGROUND-COLOR: #fff; text-align: right; vertical-align: baseline; }
+
+div.gzy_pager input[type=text], div.gzy_pager a, div.gzy_pager span, div.gzy_pager select { display: inline-block; min-width: 15px; BORDER: #eeeeee 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; MARGIN: 0px 3px; COLOR: Black; PADDING-TOP: 5px; TEXT-DECORATION: none; text-align: center; }
+
+div.gzy_pager a:hover { BORDER: white 1px solid; COLOR: red; }
+
+div.pagination a:active { BORDER-RIGHT: #b7d8ee 1px solid; BORDER-TOP: #b7d8ee 1px solid; BORDER-LEFT: #b7d8ee 1px solid; COLOR: #0066a7; BORDER-BOTTOM: #b7d8ee 1px solid; BACKGROUND-COLOR: #d2eaf6; }
+
+div.gzy_pager span.current { BORDER-RIGHT: #b7d8ee 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #b7d8ee 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; MARGIN: 0px 3px; BORDER-LEFT: #b7d8ee 1px solid; COLOR: #444444; PADDING-TOP: 5px; BORDER-BOTTOM: #b7d8ee 1px solid; BACKGROUND-COLOR: #FBEEDB }
+
+div.gzy_pager span.disabled { DISPLAY: none; }
+
+div.gzy_pager input[type=text] { margin-bottom: -4px; height: 16px; width: 20px; text-align: center; }
+
+div.gzy_pager label { color: Gray; }
+
+div.gzy_pager select { height :25px; padding:0px; width:60px;}

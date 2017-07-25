@@ -1,0 +1,33 @@
+﻿<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>正在安装WebOffice在线编辑控件</title>
+</head>
+<body>
+<center>
+<h1>正在安装WebOffice在线编辑控件...</h1>
+<h3>第一步：</h3>
+<p>请注意看浏览器，如果浏览器下方出现了如图所示的提示，请单击＂安装＂按钮<br />
+    <img src="images/setup-win7-step1.jpg" alt="" /> <br /><br />
+    如果浏览器上方出现了如图所示的提示，请单击提示条<br />
+    <img src="images/setup-xp-step1.jpg" alt="" /><br />
+    然后在弹出的菜单里单击第一项“为此计算机上的所有用户安装此加载项”<br />
+    <img src="images/setup-xp-step2.jpg" alt="" /></p>
+<h3>第二步：</h3>
+<p>在弹出对话框里点击“安装”按钮<br />
+    <img src="images/setup-win7-step2.jpg" alt="" /><br />
+    <img src="images/setup-xp-step3.jpg" alt="" />
+</p>
+</center>
+<div style="display:none">
+    <object id="office" classid="clsid:e77e049b-23fc-4db8-b756-60529a35fad5" codebase="scripts/activex/weboffice.cab#version=6,0,5,0"></object>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    if ('Version' in office) {
+        alert('控件已安装成功。');
+        location.replace('/');
+    }
+</script>

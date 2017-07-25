@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" debug="true">
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>考试</title>
+    <link rel="stylesheet" type="text/css" href="styles/style-exam.css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="scripts/TabSet/gzy.tabset.v3.js"></script>
+    <script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+    <script type="text/javascript" src="script.ashx?exam,exam.ui"></script>
+</head>
+<body>
+    <p id="biginfo">
+        <label>身份证号：<b id="b_code"></b></label>
+        <label>姓名：<b id="b_name"></b></label>
+        <label>性别：<b id="b_sex"></b></label><br />
+        <label>单位：<b id="b_school"></b></label>
+    </p>
+    <p id="ninfo">浏览器窗口过小，请最大化窗口方便答题。</p>
+    <div id="body">
+        <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" style="margin: 0 auto 10px">
+            <tr>
+                <td>
+                    <div id="header" style="height: 93px; position: relative;">
+                        <p id="exName"></p>
+                        <div class="uinfo">
+                            <table width="100%" cellspacing="0" cellpadding="0" style="text-align: center">
+                                <tbody>
+                                    <tr>
+                                        <td height="40"><span id="studentName" style="font-size: 20px;">--</span></td>
+                                        <td width="131">考试时间：<span id="totalTime">--</span>分钟</td>
+                                        <td width="125">总分：<span id="totalScore">--</span>分</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="36"><span id="studentId" style="font-size: 14px;">--</span></td>
+                                        <td><span id="leftTime" style="font-size: 24px; font-family: arial">--:--</span></td>
+                                        <td>
+                                            <input style="display: none" id="btn_submit" onclick="showSubmit()" type="image" src="../images/student.exam.showsubmit.jpg" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul id="types" style="visibility: hidden; position: absolute; top: 94px; left: 0"></ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="background: white url(../images/rt1000.jpg) left top no-repeat;">
+                    <div id="mt" style="background: url(../images/rb1000.jpg) left bottom no-repeat; padding: 10px 10px 0;">
+                        <table border="0" cellpadding="0" cellspacing="10" height="500">
+                            <tr>
+                                <td valign="top" width="960" style="overflow: hidden; width: 960px">
+                                    <div id="paper" style="display: none">
+                                        <div style="float: right; height: 24px; margin-top: 3px"><span class="done" style="float: left"><font color="black">已做</font></span>
+                                            <!--<span class="doing" style="float:left;"><font color="black">正在做</font></span>-->
+                                            <span class="willdo" style="float: left">未做</span></div>
+                                        <p style="border-bottom: 1px solid silver; margin: 12px"><span id="typeshow"></span><small id="typehelp">从左边选择题目，开始答卷。<!--点击下面的题号可切换--></small></p>
+                                        <ol id="questions" style="display: none"></ol>
+                                        <div style="margin: 12px; overflow: hidden;" id="type-control">
+                                            <input type="button" value="开始打字" style="float: right" />
+                                            <span style="float: right; font-size: 20px; margin-right: 30px"></span>
+                                            <p style="float: left; color: #333333!important" class="willdo">打字题只能完成一次，提交后不允许再次修改提交，请点击右侧的按钮开始打字。</p>
+                                            <p style="float: left; color: #333333!important; display: none" class="done">打字题只能完成一次，提交后不允许再次修改提交，你已经完成了打字题的测试。</p>
+                                        </div>
+                                        <div id="viewall" style="float: right; margin: -30px 30px 0 0; display: none">
+                                            <!--<a href="javascript://查看小题列表" onclick="viewAllInCat()">查看全部小题</a>-->
+                                        </div>
+                                    </div>
+                                    <div id="typefield" style="display: none; margin-top: 10px; border: 1px solid #dadada;">
+                                        <object id="typer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="958" height="624">
+                                            <param name="movie" value="images/type.swf" />
+                                            <param name="quality" value="high" />
+                                            <param name="wmode" value="opaque" />
+                                            <param name="swfversion" value="12.0.0.0" />
+                                        </object>
+                                    </div>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="960" id="question" style="display: none;font-size:16px">
+                                        <tr>
+                                            <td valign="top" align="left">
+                                                <div></div>
+                                            </td>
+                                            <td valign="top" align="right">
+                                                <div></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <dl style="display: none" id="qbox" class="qbox">
+                                        <dt></dt>
+                                        <dd>
+                                            <form method="post" target="frameUp" action="exam.help.asp?action=saveAnswerFile" enctype="multipart/form-data" onsubmit="return submitAnswer(this)">
+                                                <input name="questionId" type="hidden" />
+                                            </form>
+                                        </dd>
+                                    </dl>
+                                    <div id="cache" style="position: absolute; left: -10000px; top: 0px"></div>
+                                    <iframe style="display: none" name="frameUp" id="frameUp"></iframe>
+                                    <div id="nextprev" style="display: none">
+                                        <!--<p style="float:left"></p>-->
+                                        <span id="pages"></span>
+                                        <a href="javascript://loadMore" id="nextpage" onclick="loadMore()">
+                                            <img src="../images/student.exam.next.jpg" alt="" /></a>
+                                        <a href="javascript://loadNextCat" id="nextcat" style="display: none" onclick="loadNextCat()">
+                                            <img src="../images/student.exam.nextcat.jpg" alt="" /></a>
+                                        <!--<p style="float:right"></p>-->
+                                    </div>
+                                    <div id="starter">
+                                        <h4>考试提示：</h4>
+                                        <div id="exDesc"></div>
+                                        <center><span style="display:none">离考试开始还有：<b>###</b>秒</span><a style="display:none" href="javascript:;" onclick="startExam()"><img src="../images/exam.start.jpg" alt="" /></a>
+						&nbsp;&nbsp;
+						<a href="./" id="return" style="color:#1a75d3"><img src="../images/icon.gif" alt="" />返回选择考试</a></center>
+                                    </div>
+                                    <div id="qlist" style="display: none">
+                                        <table border="0" cellpadding="0" cellspacing="5" style="display: none" id="qlistTemp">
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+

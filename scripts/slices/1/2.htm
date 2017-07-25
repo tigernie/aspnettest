@@ -1,0 +1,144 @@
+﻿<table width="800" border="0" align="center" cellpadding="0" cellspacing="1" class="list">
+    <thead>
+        <tr>
+            <th class="left">模块名 <a href="javascript:;" style="font-size:12px;font-weight:normal" onclick="click1()" id="np_3_2_select">选择知识点</a></th>
+            <th class="left">题型选择</th>
+            <th class="left" width="160">分值百分比（<span style="color:red" id="totalPercent">0</span>%）</th>
+        </tr>
+    </thead>
+    <tbody id="fark">
+    </tbody>
+</table>
+<script type="text/javascript">
+    var hash = {}, table = $('#fark'), typeNums;
+    function click1() {
+        var tree, p = new gzy.popup('选择知识点', 300, 300, {
+            onload: function () {
+                p.body.append('学科：<select id="subject" style="width:120px;margin-bottom:10px;"><option>学科</option></select><div id="kpTreeDiv"></div>');
+                var subjectSelector = $('#subject');
+                subjectSelector.empty();
+
+                subject.getAllSubjects(function (subjects) {
+                    $.each(subjects, function (i, item) {
+                        subjectSelector.append('<option id="' + item.Id + '">' + item.SubjectName + '</option>');
+                    });
+                    subjectSelector.change(function (selectedSubject) {
+                        var subjectId = subjectSelector.find('option:selected').attr('id');
+                        $('#kpTreeDiv').empty();
+                        kpoint.getTree(subjectId, function (x) {
+                            tree = new gzy.tree({ items: x, multi: true }).renderTo('#kpTreeDiv').expand(0).pick($.map(params.entity.data.kpRange, function (a) { return a[0] }));
+                        });
+                    });
+                    subjectSelector.change();
+
+                });
+
+            },
+            buttons: [{
+                text: '确定',
+                click: function () {
+                    if (tree.checkedAll.length == 0) return !!alert('没有选择知识节点');
+                    table.empty();
+
+                    params.entity.data.kpRange = $.map(tree.checkedAll, function (id) { return [[id, [], 0, tree.findId(id).path.split(',').length]] });
+                    refresh();
+                    p.close();
+                }
+            }]
+        });
+    }
+
+    function refresh() {
+        $.each(params.entity.data.kpRange, function () {
+            if (this[0] == 0) return;
+            debugger;
+            var me = this, item = hash[me[0].toString()];
+            item['percent'] = me[2];
+
+            if (me.length == 4) {
+                item['indent'] = String.repeat('-->', me[3] - 1);
+                me.length = 3;
+            } else {
+                item['indent'] = '';
+            }
+
+            var row = $(String.$('<tr>\
+                                    <td><input type="hidden" name="pointId" value="{id}"/>{indent}{name}</td>\
+                                    <td id="ptypes_{id}"></td>\
+                                    <td id="ppercent_{id}" valign="top" disabled="disabled" class="disabled"><input disabled="disabled" type="text" value="{percent}" name="typeNum" id="typeNum_{id}" maxlength="3" size="2" onblur="checkNumValue(this)"></td>\
+                                </tr>', item)).appendTo('#fark');
+            var cell = $('#ptypes_' + item.id);
+            $.each(item.detail, function (i, dit) {
+                if ($.map(params.entity.data.typeRange, function (x) { return x[0] }).indexOf(dit[0]) == -1) return;
+                $(String.$('<label{5}><input {5} {6} type="checkbox" name="sType_{4}" id="sType_{4}_{1}" value="{1}"/>{2}({3})</label>', dit[0], dit[1], dit[2], item.id, dit[2] == 0 ? ' disabled="disabled"' : '', $.inArray(dit[0], me[1]) > -1 ? ' checked="checked"' : '')).appendTo(cell);
+            });
+            cell.find('input').click(function () {
+                var percent = $('#ppercent_' + item.id);
+                if (!cell.find('input:checked').length) {
+                    percent.disable();
+                    $('#typeNum_' + item.id).val(0);
+                } else {
+                    percent.enable();
+                }
+            });
+            if (cell.find('input:checked').length) $('#ppercent_' + item.id).enable();
+        });
+        typeNums = table.find('input[name=typeNum]').numberBox({ max: 100, min: 0, step: 1 }).change(function () {
+            $('#totalPercent').text(typeNums.sum(function (item) { return item.disabled ? 0 : parseInt(item.value) }));
+        });
+        typeNums.change();
+    }
+    //function click2(checked) {
+    //    $('td:gt(0)', this.parentNode.parentNode.parentNode)[checked ? 'enable' : 'disable']();
+    //    typeNums.change();
+    //}
+    //function click3(index) {
+    //    $('td[disabled!="disabled"]:eq(1) label[disabled!="disabled"] input[value=' + index + ']', '#fark tr').attr('checked', this.checked);
+    //}
+
+    function check(f) {
+        //var b = '';
+        //$('td:eq(1)', '#fark tr').each(function (i, x) {
+        //    if (!$(x).is('.disabled'))
+        //        if ($('input:checked', x).length == 0) {
+        //            b = $(x).prev().text();
+        //            return false;
+        //        }
+        //});
+        //if (b) return !!alert('选择了模块“' + b + '”，但没有为该模块选择题型');
+
+        var t = 0;
+        $('td[disabled!=disabled]:eq(2) input', '#fark tr').each(function (i, x) {
+            t += parseInt(x.value)
+        });
+        if (t != 100) return !!alert('知识模块所占的比例总和不为100 (目前是'+t+')');
+
+        return detail();
+    }
+
+    function detail() {
+        return true;
+        //针对题型数量分值积的检查，如果某题型覆盖知识点所占的分值比小于题型分值，则返回false；
+        var names = ["单选题", "多选题", "操作题", "判断题", "填空题", "简述题"], errList = [];
+
+        sinput = $('td[disabled!=disabled]:eq(2) input', '#fark tr');
+
+        // arr 所选题型信息，题数*题分
+        $.each(arr, function (i, a) {
+            if (!a) return;
+
+            var a = a.split('×'), b = parseInt(a[1]), a = parseInt(a[0]); //a--个数，b--单题题分
+            var found = 0;
+
+            sinput.each(function (j, s) {
+                var stt = $('input:checked[name=sType_' + s.name.substr(8) + '][value=' + i + ']', '#fark tr');
+                if (stt.length) found += Math.floor(tc * s.value / 100 / b);
+            });
+
+            if (found < a) errList.push(names[i] + '：只能出 ' + found + ' 个；');
+        });
+        //if (errList.length) 
+        return !errList.length || confirm('按照当前的题型和分值设置，该方案\n可能由于以下原因而无法成功生成试卷：\n\n' + errList.join('\n') + '\n\n如要继续保存方案请点“确定”,返回修改请点“取消”。');
+        //return true;
+    }
+</script>

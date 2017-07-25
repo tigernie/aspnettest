@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  debug="true">
+<head>
+<title>登录</title>
+<meta http-equiv="x-ua-compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="scripts/PopWindow/gzy.popup.js" type="text/javascript"></script>
+<script src="script.ashx?student,student.ui,exam" type="text/javascript"></script>
+    <!--<<script src="scripts/firebug-lite/build/firebug-lite.js"></script>-->
+<style type="text/css">
+* { margin: 0; padding: 0; }
+body, td, th { font-size: 14px; font-family: 微软雅黑; }
+th { text-align: left; font-size: 18px; font-weight: normal; background: url(images/login.bg.icon.gif) left center no-repeat; padding-left: 36px; }
+form { width: 1000px; height: 550px; background: url(images/login.bg.jpg) no-repeat; margin: 0 auto; overflow: hidden; position: relative; }
+.sl input { height: 33px; line-height: 32px; background-image: url(images/login.input.png); border: none; width: 170px; padding: 0 5px; }
+.sl button { background: none; border: none; width: 95px; height: 30px; background: url(images/login.btn.png); cursor: pointer; }
+.sl div { height: 275px; left: 655px; position: absolute; top: 150px; width: 315px; overflow: hidden; }
+#msg { color: red; }
+#exlist { overflow: auto; }
+#exlist ul { list-style:none; height:225px; overflow:auto; }
+#exlist ul li { background:6px center no-repeat; cursor:default; padding-left:36px; font-size:12px; border:1px solid transparent; margin-top:6px; color:gray; }
+#exlist ul li.exam { background-image:url(images/item-exam.gif); }
+#exlist ul li.exercise { background-image:url(images/item-exercise.gif); }
+    /*#exlist ul li.over { color: }*/
+#exlist ul li:hover { border-color:#8badff; border-radius:5px; }
+#exlist ul li a { font-size:16px; }
+.badie { padding:4px; background:lightyellow url("images/warning.png") left center no-repeat; border-bottom:2px solid silver; }
+</style>
+</head>
+<body>
+<form action="javascript:;" method="post" class="sl" autocomplete="off"><div>
+    <table border="0" cellpadding="0" cellspacing="0" style="">
+        <tr>
+            <td valign="top">
+                <table width="315" border="0" cellpadding="0" cellspacing="5">
+                    <tr>
+                        <th height="40" valign="middle" colspan="2">考生登录</th>
+                    </tr>
+                    <tr>
+                        <td height="10"></td>
+                    </tr>
+                    <tr logintype ="1">
+                        <td height="40" width="80" nowrap="nowrap" align="right" id="lb_name">姓名：</td>
+                        <td><input value="" type="text" name="uname" id="uname" /></td>
+                    </tr>
+                    <tr logintype="1">
+                        <td height="40" nowrap="nowrap" align="right" id="lb_pass">考号：</td>
+                        <td><input value="" name="upass" type="text" id="upass" /></td>
+                    </tr>
+
+                    <tr loginType="2" style="display:none">
+                        <td height="40" nowrap="nowrap" align="right" id="lb_pass">身份证号：</td>
+                        <td><input value="" name="idCard" type="text" id="idCard" /></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td align="left">
+                            <button type="submit"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left" id="msg"></td>
+                    </tr>
+                </table>
+            </td>
+            <td valign="top">
+                <table width="315" border="0" cellpadding="0" cellspacing="5">
+                    <tr>
+                        <th height="40" valign="middle">选择考试</th>
+                        <td align="right"><a href="StuRes.aspx" id="chaxun">查询成绩</a> <a href="javascript:;" class="exit">退出</a></td>
+                    </tr>
+                    <tr>
+                        <td height="225" colspan="2" id="exlist" valign="top">
+                            <ul>
+                            </ul>
+                            <h4 class="null" style="display: none; margin: 16px 8px 0; font-size: 14px"><img src="images/messager_info.gif" style="width: 24px; vertical-align: middle; margin-right: 6px;" alt="" />现在没有考试</h4>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div></form>
+<div class="copyright" align="center">版权所有 © 2013-2015 中国人民银行</div>
+</body>
+</html>
+<script>
+
+    $(function () {
+        student.getMyInfo(function (d) {
+            if (d.version == 0)
+                location.replace('/login.htm');
+        });
+
+        jQuery.service.call(this, 'exam.asmx/GetLoginType', {}, function (result) {
+            if (result.ok)
+            {
+                if (result.data == 2) {
+                    $('tr[loginType="2"]').show();
+                    $('tr[loginType="1"]').hide();
+                }
+                else {
+                    $('tr[loginType="1"]').show();
+                    $('tr[loginType="2"]').hide();
+                }
+            }
+
+        });
+
+    })
+</script>

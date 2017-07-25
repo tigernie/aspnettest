@@ -1,0 +1,10 @@
+﻿.popup_window { -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #9c9c9c; }
+.popup_title { font-size: 12px; background: url(image.gif) left -31px repeat-x; height: 25px; }
+.popup_title label { background: url(image.gif) no-repeat -1px -1px; line-height: 25px; height: 25px; padding-left: 8px; font-weight: bold; }
+.popup_title span { height: 25px; background: url(image.gif) no-repeat right -61px; margin-right: -1px; }
+.popup_title span a { display: block; width: 17px; height: 16px; margin: 4px 5px 0 0; background: url(image.gif) left -96px; }
+.popup_title span a:hover, .popup_title span a:focus { background-position: left -120px; }
+.popup_buttons {text-align: right; padding: 6px 18px 6px 0; background: whitesmoke; border-radius: 0 0 5px 5px; }
+.popup_buttons button { margin-left: 10px; height: 24px; padding: 0 0.6em; }
+.popup_buttons label { float: left; padding-left: 12px; margin-top: 5px; }
+.popup_info { line-height: 25px; padding: 5px; border-bottom: 1px solid #ffe5b6; background: #fbfaee url(info.png) 5px 9px no-repeat; text-indent: 18px; }

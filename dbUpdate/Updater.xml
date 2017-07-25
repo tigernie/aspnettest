@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Updater</name>
+    </assembly>
+    <members>
+        <member name="T:Updater.ConfigurationBase.Configuration_Common_Settings">
+            <summary>
+            通用配置参数
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_SYS">
+            <summary>
+            配备信息节
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_Version">
+            <summary>
+            配置文件版本信息
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_SoftWareCurrentVersion">
+            <summary>
+            当前待升级软件版本信息
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_SoftWareTargetVersion">
+            <summary>
+            软件待升级到的目标版本信息
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_ImportMode">
+            <summary>
+            导入模式
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Common_Settings.CONFIG_ServiceName">
+            <summary>
+            导入模式
+            </summary>
+        </member>
+        <member name="M:Updater.Configuration.CheckConfigurationFileExist">
+            <summary>
+            检查配置文件是否存在
+            </summary>
+            <exception cref="T:System.ApplicationException"></exception>
+        </member>
+        <member name="M:Updater.Configuration.GetConfigurationVersion">
+            <summary>
+            获取配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Updater.Configuration.Version_1">
+            <summary>
+            1.0版配置文件的相关操作
+            </summary>
+        </member>
+        <member name="P:Updater.Configuration.Version_2">
+            <summary>
+            2.0版配置文件的相关操作
+            </summary>
+        </member>
+        <member name="T:Updater.ConfigurationBase.Configuration_Versino_1">
+            <summary>
+            版本1配置
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Version_1_Settings.CONFIG_WebRootDirectory">
+            <summary>
+            网站根目录路径
+            </summary>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Versino_1.InIFileName">
+            <summary>
+            配置文件名(全路径)
+            </summary>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.GetTargetSoftWareVersion">
+            <summary>
+            获取待升级软件版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.IsImportMode">
+            <summary>
+            是否为导入模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.GetDataBaseServiceName">
+            <summary>
+            获取数据库服务名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.GetCurrentSoftWareVersion">
+            <summary>
+            获取当前待升级到的目标软件版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.GetWebRootDirectory">
+            <summary>
+            获取网站根目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.ConfigurationBase.Configuration_Versino_1.GetConnectionString(System.String,System.String)">
+            <summary>
+            获取数据库连接字符串
+            </summary>
+            <param name="rootPath">网站根目录</param>
+            <returns></returns>
+        </member>
+        <member name="F:Updater.ConfigurationBase.Configuration_Version_2.InIFileName">
+            <summary>
+            配置文件名(全路径)
+            </summary>
+        </member>
+        <member name="M:Updater.CurrentWorkDirectory.GetCurrentWorkDirectory">
+            <summary>
+            获取当前工作目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Updater.UpdateDBException">
+            <summary>
+            数据库升级异常
+            </summary>
+        </member>
+        <member name="T:Updater.UpdateDBStructureException">
+            <summary>
+            数据库结构升级异常
+            </summary>
+        </member>
+        <member name="T:Updater.UpdateDBByScriptsException">
+            <summary>
+            数据库脚本升级异常
+            </summary>
+        </member>
+        <member name="T:Updater.ConfigurationException">
+            <summary>
+            版本配置异常
+            </summary>
+        </member>
+        <member name="T:Updater.DatabaseCanNotAccessException">
+            <summary>
+            数据库不可访问异常
+            </summary>
+        </member>
+        <member name="T:Updater.SQLScript">
+            <summary>
+            SQL脚本
+            </summary>
+        </member>
+        <member name="P:Updater.SQLScript.SQLString">
+            <summary>
+            待执行的SQL
+            </summary>
+        </member>
+        <member name="P:Updater.SQLScript.CommanType">
+            <summary>
+            指定如何解释命令字符串
+            </summary>
+        </member>
+        <member name="P:Updater.SQLScript.IsPreExecute">
+            <summary>
+            需要在更新开始时执行为True，更新结束时执行为False
+            </summary>
+        </member>
+        <member name="P:Updater.SQLScript.SqlParameters">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="M:Updater.UpdateDataBase.Update">
+            <summary>
+            升级数据库(版本2及以上配置文件)
+            </summary>
+            <exception cref="T:Updater.UpdateDBByScriptsException"></exception>
+            <exception cref="T:Updater.UpdateDBStructureException"></exception>
+            <exception cref="T:Updater.ConfigurationException"></exception>
+        </member>
+        <member name="M:Updater.UpdateDataBase.Update(System.String,System.Boolean)">
+            <summary>
+            升级数据库
+            </summary>
+            <param name="connnectionName">连接名称</param>
+            <exception cref="T:Updater.UpdateDBByScriptsException"></exception>
+            <exception cref="T:Updater.UpdateDBStructureException"></exception>
+        </member>
+        <member name="F:Updater.UpdateSql.currentVersion">
+            <summary>
+            当前版本号
+            </summary>
+        </member>
+        <member name="F:Updater.UpdateSql.newVersion">
+            <summary>
+            欲升级到的新版本号
+            </summary>
+        </member>
+        <member name="F:Updater.UpdateSql.scriptDirectory">
+            <summary>
+            更新部分根目录
+            </summary>
+        </member>
+        <member name="F:Updater.UpdateSql.conn">
+            <summary>
+            数据库连接串
+            </summary>
+        </member>
+        <member name="M:Updater.UpdateSql.update">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="M:Updater.UpdateSql.scriptsToUpdate">
+            <summary>
+            获取需要更新的脚本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.UpdateSql.GetScriptContent(System.String)">
+            <summary>
+            获取脚本内容
+            </summary>
+            <param name="scriptFileName">脚本文本名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.UpdateBase.ExportDBStruct(System.String,System.String)">
+            <summary>
+            导出数据库结构
+            </summary>
+            <param name="connectionString"></param>
+            <param name="exportStructFileName"></param>
+        </member>
+        <member name="M:Updater.UpdateBase.UpdateDBByScriptFiles(System.String,System.String,System.String,System.String)">
+            <summary>
+            通过脚本升级
+            </summary>
+            <param name="currentVersion">当前版本</param>
+            <param name="newVersion">将要升级到的新版本</param>
+            <param name="scriptDirectory">脚本所在目录</param>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:Updater.UpdateBase.UpdateDBByScript(System.String,System.Collections.Generic.IEnumerable{Updater.SQLScript})">
+            <summary>
+            通过脚本升级
+            </summary>
+        </member>
+        <member name="M:Updater.UpdateBase.GetStructFile(System.String)">
+            <summary>
+            获取数据库结构文件
+            </summary>
+            <param name="workDirectory">当前工作路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Updater.UpdateCommon.Update(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Updater.SQLScript})">
+            <summary>
+            升级数据库
+            </summary>
+            <param name="connectionString">数据库连接字符串</param>
+            <param name="currentVersion">当前数据库版本</param>
+            <param name="newVersion">新的数据库版本</param>
+            <param name="dbStructDirectory">数据库结构文件目录</param>
+            <param name="postExecuteScriptsDirectory">更新结构后需要执行的脚本文件目录</param>
+            <param name="preExecuteScriptsDirectory">更新结构前需要执行的脚本文件目录</param>
+            <param name="alwaysExecuteScripts">无论版本总是需要执行的SQL脚本</param>
+        </member>
+        <member name="T:Updater.Update.Update_Version_1">
+            <summary>
+            1.0版升级
+            </summary>
+        </member>
+        <member name="M:Updater.Update.Update_Version_1.#ctor(System.String)">
+            <summary>
+            版本1升级方法升级
+            </summary>
+            <param name="workDir">当前工作路径</param>
+        </member>
+        <member name="M:Updater.Update.Update_Version_1.Update(System.String,System.Boolean)">
+            <summary>
+            1.0版升级方法
+            </summary>
+        </member>
+        <member name="T:Updater.Update.Update_Version_2">
+            <summary>
+            2.0版升级
+            </summary>
+        </member>
+        <member name="M:Updater.Update.Update_Version_2.Update">
+            <summary>
+            2.0版升级方法
+            </summary>
+        </member>
+    </members>
+</doc>

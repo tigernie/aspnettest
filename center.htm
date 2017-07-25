@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>考务管理中心</title>
+<link href="extjs/resources/css/ext-all.css" rel="stylesheet" />
+<script src="extjs/ext-all.js" type="text/javascript"></script>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/center.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="scripts/Tree/gzy.tree.js" type="text/javascript"></script>
+<script src="scripts/TabSet/gzy.tabset.v3.js" type="text/javascript"></script>
+<script src="scripts/PopWindow/gzy.popup.js" type="text/javascript"></script>
+    <script src="scripts/jquery.cookie.js"></script>
+<script src="/script.ashx?teacher,exam,center,center.ui" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    Ext.Loader.setConfig({ enabled: true });
+    Ext.Loader.setPath('Ext.ux', 'extjs/ux');
+    Ext.require(['Ext.ux.form.SearchField']);
+
+    Ext.data.WebServiceProxy = Ext.extend(Ext.data.HttpProxy, {
+        doRequest: function (operation, callback, scope) {
+            var writer = this.getWriter(),
+                request = this.buildRequest(operation, callback, scope);
+
+            if (typeof request.params.sort === 'string')
+                request.params.sort = eval(request.params.sort);
+            request.proxy.actionMethods = { read: 'POST' };
+
+            if (operation.allowWrite()) {
+                request = writer.write(request);
+            }
+
+            if (operation.filters.length) {
+                Ext.each(operation.filters, function (filter) {
+                    request.params[filter.property] = filter.value;
+                });
+            }
+
+            Ext.apply(request, {
+                params: Ext.encode(request.params), //JSON转换成字符串
+                headers: { 'Content-Type': 'application/json;charset=utf-8' }, //标记为JSON请求
+                timeout: this.timeout,
+                scope: this,
+                callback: this.createRequestCallback(request, operation, callback, scope),
+                method: this.getMethod(request),
+                disableCaching: true
+            });
+
+            Ext.Ajax.request(request);
+            return request;
+        }
+    });
+    var userplat = {
+        openWindow: function (title, width, height, items, config) {
+            return Ext.create('widget.window', Ext.Object.merge({
+                title: title,
+                width: width, height: height,
+                modal: true, resizable: false,
+                layout: { type: 'border', padding: 5 },
+                items: items
+            }, config || {})).show();
+        }
+    }
+    function setAdmin(esid) {
+        var store, cm, bgroup, admins = {}, boxes = [];
+
+        var _top = new Ext.Component({
+            height: 50, region: 'north',
+            style: { backgroundColor: '#f9f9f9' },
+            autoEl: {
+                tag: 'div',
+                html: '<label style="padding:6px 0 0 6px;float:left;">已经设置的管理员：</label><div id="bgroup" style="padding:6px 0 0 6px;clear:left;"></div>'
+            }
+        }), _tree = {
+            xtype: 'treepanel',
+            region: 'west', flex: 1, margins: '0 -1 -1 -1',
+            store: Ext.create('Ext.data.TreeStore', {
+                proxy: Ext.create('Ext.data.WebServiceProxy', {
+                    url: '/user.asmx/GetOrganizeTree',
+                    reader: { type: 'json', root: 'd' }
+                }),
+                autoLoad: true,
+                nodeParam: 'root'
+            }),
+            root: { id: 0, text: '全国', expanded: true },
+            rootVisible: true,
+            listeners: {
+                itemclick: function ($, node) {
+                    store.proxy.extraParams.organization = String(node.data.id);
+                    store.load({ page: 1, start: 0 });
+                }
+            },
+            tbar: new Ext.toolbar.Toolbar({ items: ['<label style="line-height:20px">按行政机构过滤</label>'] })
+        }, _grid = {
+            xtype: 'gridpanel',
+            region: 'center', flex: 2, margins: '0 -1 -1 0',
+            emptyText: '没有符合条件的记录',
+            viewConfig: {
+                loadMask: true,
+                loadingText: '正在加载数据...'
+            },
+            store: store = new Ext.data.Store({
+                fields: ['username', 'realname', 'status', 'usertype'],
+                autoDestroy: true,
+                proxy: new Ext.data.WebServiceProxy({
+                    url: '/user.asmx/GetTeacherList',
+                    reader: {
+                        type: 'json',
+                        idProperty: 'id',
+                        totalProperty: 'd.count',
+                        root: 'd.data.rows'
+                    },
+                    extraParams: { status: -1, query: '', organization: '', type: -1, searchtype: 'username' }
+                }), remoteSort: true,
+                sorters: [{ property: 'id', direction: 'DESC' }],
+                listeners: {
+                    load: function () {
+                        var records = new Array();
+                        store.each(function (record) { if (String(record.data.id) in admins) records.push(record) });
+                        cm.select(records, true);
+                    }
+                }
+            }),
+            selModel: cm = new Ext.selection.RowModel(),
+            columns: [
+                { text: "用户名", width: 100, dataIndex: 'username' },
+                { text: "真实姓名", width: 100, dataIndex: 'realname' }
+            ],
+            tbar: new Ext.toolbar.Toolbar({
+                items: ['<label>双击添加为管理员</label>', '->', {
+                    xtype: 'searchfield',
+                    store: store,
+                    name: 'query',
+                    paramName: 'query',
+                    emptyText: '搜索用户名'
+                }]
+            }),
+            bbar: new Ext.PagingToolbar({ store: store, displayInfo: false }),
+            listeners: {
+                itemdblclick: function (grid, item) {
+                    var id = item.data.id.toString();
+                    if (!(id in admins)) {
+                        admins[id] = [item.data.realname,false];
+                        init_box();
+                    }
+                }
+            }
+        }/**/;
+
+        var form, win = userplat.openWindow('设置管理员：', 542, 440, [form = new Ext.panel.Panel({
+            width: 520, height: 369, layout: 'border',
+            items: [_top, _tree, _grid]//
+        })], {
+            listeners: {
+                beforeshow: function(){
+                    document.body.className = 'x-body x-webkit x-chrome x-reset';
+                    document.documentElement.className = 'x-border-box x-strict';
+                },
+                show: function () {
+                    center.getExamAdmins(esid, function (data) {
+                        $.each(data.data, function (i, idAndName) {
+                            admins[idAndName.Id] = [idAndName.Name, idAndName.Disabled];
+                        });
+                    init_box();
+                    });
+                },
+                close: function () {
+                    document.body.className = document.documentElement.className = '';
+                }
+            },
+            buttons: [{
+                text: '保存',
+                handler: function () {
+                    values = $('#bgroup input:checked').map(function (i, x) { return x.value }).toArray();
+                    if (values.length === 0) {
+                        alert('没有选择管理员...');
+                    } else {
+                        center.setExamAdmins(esid, values.toString(), function (data) {
+                            if (data.ok)
+                                win.close();
+                            else
+                                alert(data.msg);
+                        });
+                    }
+                }
+            }, {
+                text: '取消',
+                handler: function () { win.close() }
+            }]
+        });
+
+        function init_box() {
+            var bgroup = $('#bgroup').empty();
+            for (var x in admins) {
+                bgroup.append('<label for="admins_' + x + '" style="margin:6px 0 0 6px;"><input style="vertical-align:middle" type="checkbox" id="admins_' + x + '" name="admins" value="' + x + '" checked="checked"' + (admins[x][1]?' disabled="disabled"':'') + '/> ' + admins[x][0] + '</label>');
+            }
+        }
+    }
+</script>
+<style type="text/css">
+    .x-body { font-size:14px; font-family: '微软雅黑' }
+</style>
+</head>
+<body>
+<div class="body">
+    <div class="head kaowu">
+        <p>
+            <a href="javascript:;" class="user"></a>
+            <a href="teacher.htm" class="home">返回首页</a>
+            <a href="javascript:;" class="setting">系统管理</a>
+            <a href="javascript:;" class="exit">注销</a>
+        </p>
+    </div>
+    <div class="main" id="grid" style="display: none">
+        <table cellpadding="0" cellspacing="5" border="0" width="100%">
+            <tr>
+                <td>
+                    <form action="javascript:;" method="get" id="main-filter" class="selectgroup">
+                    <select name="order">
+                        <option value="2">按开考时间降序</option>
+                        <option value="1">按开考时间升序</option>
+                        <option value="3">按创建时间降序</option>
+                    </select>
+                    <select name="paperType">
+                        <option value="-1">所有试卷类型</option>
+                        <option value="1">统一卷</option>
+                        <option value="2">随机卷</option>
+                    </select>
+                    <select name="status">
+                        <option value="-1">所有考试状态</option>
+                        <option value="0">创建中</option>
+                        <option value="2">已编排</option>
+                        <option value="10">已发布</option>
+                    </select>
+                    <select name="exType" style="display: none">
+                        <option value="-1">所有考试类型</option>
+                        <option value="1">班级考试</option>
+                        <option value="2">自由练习</option>
+                    </select>
+                    </form>
+                </td>
+                <td align="right">
+                    <button type="button" class="common" id="addnew">添加新考试</button>
+                </td>
+            </tr>
+        </table>
+        <table id="exlist" cellpadding="0" cellspacing="0" class="list" border="0">
+        </table>
+    </div>
+    <div class="examinfo" id="examinfo" style="display:none">
+        <a href="javascript:;" id="return-link" style="float:right;margin:10px 10px 0 0">返回列表</a>
+        <h3 id="ex-name">2013年6月考试</h3>
+        <div style="float:right;padding-right:10px" id="ex-control"></div>
+        <p><label>考试日期: <b id="ex-date">2013.6.20-2013.6.21</b></label><label>考卷类型: <b id="ex-type">随机卷</b></label><label>考点数目: <b id="ex-schools">305</b>个</label><label>参考考生: <b id="ex-students">234324</b>人</label><label>当前状态: <b id="ex-status">未发布</b></label></p>
+    </div>
+    <div class="main" id="main" style="display:none">
+        <div class="left" id="left">
+            <label><b>考前数据收集</b></label>
+            <a href="javascript://students">考生信息</a>
+            <a href="javascript://schools">考点信息</a>
+            <a href="javascript://enroll">报名管理</a>
+            <label><b>考务信息管理</b></label>
+            <a href="javascript://baseinfo">考试基本信息</a>
+            <a href="javascript://orgAudit">审核人行报名信息</a>
+            <a href="javascript://timeset">场次时间设定</a>
+            <a href="javascript://roomset">考生场次编排</a>
+            <a href="javascript://subScoreInfo">实操成绩导入情况</a>
+            <a href="javascript://search">考务安排查询</a>
+            <a href="javascript://overView">综合信息查询</a>
+            <label><b>考试数据包</b></label>
+            <a href="javascript://dataforuse">考务数据包管理</a>
+            <a href="javascript://resultdata">结果数据包管理</a>
+            <label><b>数据展示</b></label>
+            <a href="javascript://areaStudents" target="_blank">考点人数总览</a>
+            <a href="javascript://centermonitor" target="_blank">时实监控</a>
+        </div>
+        <div class="center" id="center">
+            
+        </div>
+    </div>
+</div>
+<p class="body"></p>
+    <script src="scripts/Drag/gzy.drag.js"></script>
+    <link href="/scripts/easyui/themes/metro/easyui.css" rel="stylesheet" />
+    <link href="/scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <script src="/scripts/easyui/jquery.easyui.min.js"></script>
+</body>
+</html>

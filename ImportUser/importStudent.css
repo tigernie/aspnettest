@@ -1,0 +1,153 @@
+﻿ .datarow > td
+        {
+            padding-left: 5px;
+        }
+        .right_bar
+        {
+            position: fixed;
+            right: 0;
+            top: 200px;
+            padding: 10px;
+            background-color: rgb(73,202,158);
+            color: White;
+        }
+        .right_bar a
+        {
+            color: Black;
+            text-decoration: none;
+        }
+     
+        
+        .display_none
+        {
+            display: none;
+        }
+        .visibility_hidden
+        {
+             visibility:hidden;
+        }
+         
+        .topTitle
+        {
+            position: fixed;
+            width: 960px;
+            margin: 0 auto;
+            background-color: White;
+            z-index: 10000px;
+        }
+        .gridview_header
+        {
+            width: 100%;
+            border-top: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        .gridview_header th
+        {
+            height: 30px;
+            line-height: 30px;
+            background-color: rgb(33,33,33);
+            color: rgb(208,208,208);
+            text-align: center;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-left: 5px;
+        }
+        .graphical
+        {
+            width: 960px;
+            height: 40px;
+            background-color: White;
+            padding-top: 10px;
+        }
+        .rows
+        {
+            padding-top: 114px;
+        }
+        .row_error .nonrelation_error .relation_error .warn
+        {
+            width: 90px;
+            height: 28px;
+            float: left;
+            margin-right: 20px;
+        }
+        div.row_error > div.square
+        {
+            background-color: rgb(255, 221, 202);
+        }
+        div.nonrelation_error > div.square
+        {
+            background-color: rgb(213,0,18);
+        }
+        div.relation_error > div.square
+        {
+            background-color: rgb(238, 102, 0);
+        }
+        div.warn > div.square
+        {
+            background-color: rgb(240, 230, 79);
+        }
+        .square
+        {
+            width: 85px;
+            height: 28px;
+            background-color: Black;
+            float: left;
+            text-align:center;
+            vertical-align:middle;
+            line-height:20px;
+            padding-top:5px;
+        }
+        .square > span
+        {
+            text-align:center;
+            vertical-align:middle;
+            width:43px;
+            height:19px;
+             
+        }
+        .introduce
+        {
+            width: 150px;
+            height: 28px;
+            float: left;
+            padding: 5px;
+        }
+          div.warn > div.introduce
+        {
+             width: 90px;
+        }
+        .filter
+        {
+             padding-top:0;
+             float:right;
+        }
+        #DropDownList_Filter
+        {
+            width:150px;
+            text-align:center;
+            margin-right:10px;
+       
+        }
+        
+           .GridView1,.GridView1 tr td,.datarow ,.datarow  tr,.datarow  tr td
+        {
+            border: 1px solid gray;
+        }
+        
+        .float_right
+        { 
+            float:right;
+            margin-right:10px;
+        }
+        #LinkButton_Import 
+        {
+            background-color:rgb(33,33,33);
+            color:rgb(208,208,208);
+            text-align:center;
+            vertical-align:middle;
+            padding-top:1px;
+        }
+        .Operation_bar
+        {
+             height:15px;
+        }

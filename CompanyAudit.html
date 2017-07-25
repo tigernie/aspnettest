@@ -1,0 +1,432 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>单位审核</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="script.ashx?teacher" type="text/javascript"></script>
+    <script src="scripts/lib/teacher.ui.js"></script>
+    <script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+
+    <link href="scripts/easyui/themes/metro/easyui.css" rel="stylesheet" />
+    <!--<link href="scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />-->
+    <link href="scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <script src="scripts/easyui/jquery.easyui.min.js"></script>
+
+
+</head>
+<body>
+    <!--[if lte ie 7]>
+    <style type="text/css">
+    .badie { padding:4px 4px 4px 24px; font-size:14px; background: #ffffe0 url("images/warning.png") 4px center no-repeat; border-bottom:2px solid silver; }
+    body { background-position-y: 24px; }
+    </style>
+    <div class="badie">为了保证各项功能的正常使用，请使用IE8或以上版本的IE浏览器。</div>
+    <![endif]-->
+    <div class="body">
+        <div id="msg_checkOnline" style=" display:none;">
+        </div>
+        <div class="head baoming">
+            <p>
+                <a href="javascript:;" class="user">超级管理员</a>
+                <a href="teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a>
+                <a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+        <div class="wide">
+            <div style="margin:10px;">
+               <div style="display:inline-block">选择考试：<select id="examSelecotr"></select></div>
+                <div style="display:inline-block">审核状态：<button id="submitAudit" style="display:none">提交上级审核</button><label id="parentAuditState"></label></div>
+            </div>
+            <div class="easyui-tabs" style="width:980px;height:auto">
+                <div title="待审核考生信息" style="margin:5px;">
+                    <table id="auditedPassedTable" audit="unaudit" class="easyui-datagrid" title="" style="width:970px;height:450px"
+                           data-options="rownumbers:true,singleSelect:false,collapsible:true,url:'company.asmx/GetCompanyStudents?auditState=1',method:'get'">
+                        <thead>
+                            <tr>
+                                <th data-options="field:'ck',checkbox:true">选择</th>
+                                <th data-options="field:'name',width:'100',align:'center'">考生姓名</th>
+                                <th data-options="field:'sex',width:'40',align:'center'">性别</th>
+                                <th data-options="field:'idno',width:'170',align:'center'">身份证号</th>
+                                <th data-options="field:'email',width:'160',align:'center'">Email</th>
+                                <th data-options="field:'phone',width:'130',align:'center'">电话</th>
+                                <th data-options="field:'qq',width:'150',align:'center'">QQ</th>
+                                <th data-options="field:'imageUrl',align:'center',formatter:imageFormatter">照片</th>
+                                <th data-options="field:'id',width:'100',align:'center',formatter:operationFormatter">操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div title="通过审核的考生信息" style="margin:5px;">
+                    <table id="auditedPassedTable" audit="passed" class="easyui-datagrid" title="" style="width:970px;height:450px"
+                           data-options="rownumbers:true,singleSelect:false,collapsible:true,url:'company.asmx/GetCompanyStudents?auditState=2',method:'get'">
+                        <thead>
+                            <tr>
+                                <th data-options="field:'ck',checkbox:true">选择</th>
+                                <th data-options="field:'name',width:'100',align:'center'">考生姓名</th>
+                                <th data-options="field:'sex',width:'40',align:'center'">性别</th>
+                                <th data-options="field:'idno',width:'170',align:'center'">身份证号</th>
+                                <th data-options="field:'email',width:'160',align:'center'">Email</th>
+                                <th data-options="field:'phone',width:'130',align:'center'">电话</th>
+                                <th data-options="field:'qq',width:'150',align:'center'">QQ</th>
+                                <th data-options="field:'imageUrl',align:'center',formatter:imageFormatter">照片</th>
+                                <th data-options="field:'id',width:'70',align:'center',formatter:PassedOperationFormatter">操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div title="未通过审核的考生信息"  style="margin:5px;">
+                    <table id="auditedPassedTable" audit="failed" class="easyui-datagrid" title="" style="width:970px;height:450px"
+                           data-options="rownumbers:true,singleSelect:false,collapsible:true,url:'company.asmx/GetCompanyStudents?auditState=3',method:'get'">
+                        <thead>
+                            <tr>
+                                <th data-options="field:'ck',checkbox:true">选择</th>
+                                <th data-options="field:'name',width:'100',align:'center'">考生姓名</th>
+                                <th data-options="field:'sex',width:'40',align:'center'">性别</th>
+                                <th data-options="field:'idno',width:'170',align:'center'">身份证号</th>
+                                <th data-options="field:'email',width:'160',align:'center'">Email</th>
+                                <th data-options="field:'phone',width:'130',align:'center'">电话</th>
+                                <th data-options="field:'qq',width:'150',align:'center'">QQ</th>
+                                <th data-options="field:'imageUrl',align:'center',formatter:imageFormatter">照片</th>
+                                <th data-options="field:'id',width:'70',align:'center',formatter:FailedOperationFormatter">操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div title="考点绑定" style="margin:5px;">
+                    <table id="bindTable" class="easyui-datagrid" bind=bind title="" style="width:970px;height:450px"
+                           data-options="rownumbers:true,singleSelect:true,isajaxEx:true,collapsible:true,url:'company.asmx/GetBindStudents',method:'get'">
+                        <thead>
+                            <tr>
+                                <!--<th data-options="field:'ck',checkbox:true">选择</th>-->
+                                <th data-options="field:'examCenterName',width:140,align:'center'">考点名称</th>
+                                <th data-options="field:'roomsCount',width:'100',align:'center'">考场数</th>
+                                <th data-options="field:'computersCount',width:'100',align:'center'">总机位数</th>
+                                <th data-options="field:'bindStudentsCount',width:140,align:'center'">绑定人数</th>
+                                <th data-options="field:'sessionTime',width:140,align:'center'">场次起始时间</th>
+                                <th data-options="field:'sessionsCount',width:140,align:'center'">场次数</th>
+                                <th data-options="field:'id',align:'center',formatter:bindOperationFormatter">操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dd"><img style="width:0;height:0" /></div>
+    <div id="auditDD"></div>
+    <p class="body"></p>
+    <div class="copyright">版权所有 © 2013-2015 中国人民银行</div>
+    <iframe id="upframe" name="upframe" style="display:none"></iframe>
+    <script>
+        function imageFormatter(val, row) {
+            return '<a href="javascript:showImage(\'' + row.name + '\',\'' + row.imageUrl + '\');">点击查看</a>'
+        }
+
+        function showImage(name, imageUrl) {
+            $('#dd img').attr('src', imageUrl).css('width','150px').css('height','210px');
+            $('#dd').dialog({
+                title: name + '的照片',
+                width: 170,
+                height: 250,
+                closed: false,
+                cache: false,
+                modal: true
+            });
+        }
+        
+        function operationFormatter(val, row) {
+            return '<a href="javascript:audit(' + val + ',true);">通过</a>\
+                    <a href="javascript:audit(' + val + ',false);">拒绝</a>'
+        }
+
+        function PassedOperationFormatter(val, row) {
+            return '<a href="javascript:audit(' + val + ',false);">拒绝</a>'
+        }
+
+        function FailedOperationFormatter(val, row) {
+            return '<a href="javascript:audit(' + val + ',true);">通过</a>'
+        }
+
+
+        function bindOperationFormatter(val) {
+            return '<a href="javascript:deleteBindInfo('+val+');">删除</a>'
+        }
+
+        function deleteBindInfo(id) {
+            $.post('/company.asmx/DeleteBindInfo', { id: id }, function (data) {
+                if (data.ok) {
+                    $.messager.show({
+                        title: '提示',
+                        msg: '审核成功',
+                        timeout: 5000,
+                        showType: 'slide'
+                    });
+                    refreshBindTable();
+                }
+                else {
+                    alert(data.msg);
+                }
+            });
+        }
+
+        function audit(ids, pass) {
+            if (ids) {
+                $.post('/company.asmx/AuditStudents', { ids: ids, pass: pass }, function (result) {
+                    if (result.ok) {
+                        $.messager.show({
+                            title: '提示',
+                            msg: '审核成功',
+                            timeout: 5000,
+                            showType: 'slide'
+                        });
+                        refreshGrid();
+                    }
+                    else
+                        alert(result.msg);
+
+                });
+            }
+
+        }
+
+        $(function () {
+            $('#examSelecotr').html('<option>请选择考试</option>');
+            $.post('audit.asmx/GetCreatingExams', {}, function (result) {
+                $.each(result, function (i, item) {
+                    $('#examSelecotr').append('<option value="' + item.id + '">' + item.name + '</option>');
+                });
+            });
+
+            $('#examSelecotr').change(function () {
+                var examId = $(this).val();
+                examId = examId ? examId : 0;
+                refreshGrid();
+                initSubmit();
+                $('input[name="examId"]').val(examId);
+            });
+
+            initGridToolBar();
+
+            $('#submitAudit').click(function () {
+                sumbitToParentAudit();
+            })
+
+
+        });
+
+        $('.easyui-datagrid').datagrid({
+            onLoadSuccess: function (data) {
+                var pager = $(this).datagrid('getPager');
+                pager.pagination({
+                    beforePageText: '第',//页数文本框前显示的汉字
+                    afterPageText: '页    共 {pages} 页',
+                    displayMsg: '当前显示 {from} - {to} 条记录   共 {total} 条记录',
+                   
+                });
+            }
+        });
+   
+        function refreshGrid() {
+            var examId = $('#examSelecotr').val();
+            examId = examId ? examId : 0;
+            $('.easyui-datagrid').each(function () {
+                $(this).datagrid('load', {
+                    examId: examId
+                });
+            });
+        }
+
+        function initGridToolBar() {
+
+            $('.easyui-datagrid[audit="unaudit"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-ok',
+                    text:'通过',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="unaudit"]');
+                        audit(ids.toString(), true);
+                    }
+                }, '-', {
+                    iconCls: 'icon-no',
+                    text: '拒绝',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="unaudit"]');
+                        audit(ids.toString(), false);
+                    }
+                }, '-', {
+                    iconCls: 'icon-print',
+                    text: '导出',
+                    handler: function () {
+                        exportStudentsInfo(1);
+                    }
+                }
+
+                ]
+            });
+
+            $('.easyui-datagrid[audit="passed"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-no',
+                    text: '拒绝',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="passed"]');
+                        audit(ids.toString(), false);
+                    }
+                }, '-', {
+                    iconCls: 'icon-print',
+                    text: '导出',
+                    handler: function () {
+                        exportStudentsInfo(2);
+                    }
+                }]
+            });
+
+            $('.easyui-datagrid[audit="failed"]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-ok',
+                    text: '通过',
+                    handler: function () {
+                        var ids = getSelectedIds('.easyui-datagrid[audit="failed"]');
+                        audit(ids.toString(), true);
+                    }
+                }, '-', {
+                    iconCls: 'icon-print',
+                    text: '导出',
+                    handler: function () {
+                        exportStudentsInfo(3);
+                    }
+                }]
+            });
+
+            $('.easyui-datagrid[bind]').datagrid({
+                toolbar: [{
+                    iconCls: 'icon-add',
+                    text: '添加绑定关系',
+                    handler: function () {
+                        showBindWindow();
+                    }
+                }]
+            });
+
+        }
+
+        function exportStudentsInfo(auditState) {
+            var examId = $('#examSelecotr').val();
+            $.post('/company.asmx/ExportStudents', { examId: examId, auditState: auditState }, function (data) {
+                $('#iframe-download')[0].contentWindow.location = data.fileName;
+            });
+        }
+
+        function showBindWindow(bindId) {
+
+            $('#auditDD').dialog({
+                title: '绑定关系',
+                width: 500,
+                height: 200,
+                closed: false,
+                cache: false,
+                modal: true,
+                href:'/bindExamCenter.html',
+                buttons: [
+                    {
+                        iconCls: 'icon-ok',
+                        text: '保存',
+                        handler: function () {
+                            try {
+                                save(function () {
+                                    $('#auditDD').dialog('close');
+                                    refreshBindTable();
+                                });
+
+                            }
+                            catch (e) {
+                                alert(e.message);
+                            }
+                        }
+                    },
+                    {
+                        iconCls: 'icon-cancel',
+                        text: '取消',
+                        handler: function () {
+                            $('#auditDD').dialog('close');
+                        }
+                    },
+                ]
+            });
+        }
+
+
+        function getSelectedIds(selector) {
+            var rows = $(selector).datagrid('getSelections');
+            var ids = [];
+            $.each(rows, function () {
+                ids.push(this.id);
+            });
+            return ids;
+        }
+
+        function initSubmit() {
+            var submitBtn = $('#submitAudit');
+            var examId = $('#examSelecotr').val();
+            var note = $('#parentAuditState');
+
+            submitBtn.hide();
+
+            $.post('/company.asmx/GetParentAuditState', { examId: examId }, function (result) {
+                if (result.ok) {
+                    if (!result.data || result.data == 3) {
+                        submitBtn.show();
+                        if (!result.data)
+                            note.html('');
+                        else
+                            note.html('上级审核未通过');
+                    }
+                    else if (result.data == 1)
+                    {
+                        submitBtn.hide();
+                        note.html('正在等待上级审核');
+                    }
+                    else {//通过
+                        submitBtn.hide();
+                        note.html('上级审核已通过');
+                    }
+
+                }
+
+            });
+
+
+        }
+
+        function sumbitToParentAudit() {
+            var examId = $('#examSelecotr').val();
+            $.post('/company.asmx/SubmitToParentAudit', { examId: examId }, function (result) {
+                if (result.ok) {
+                    $.messager.show({
+                        title: '提示',
+                        msg: '已提交至上级审核',
+                        timeout: 5000,
+                        showType: 'slide'
+                    });
+                    initSubmit();
+                }
+                else
+                    alert(result.msg);
+
+            });
+        }
+
+        function refreshBindTable() {
+            $('#bindTable').datagrid('reload');
+
+        }
+
+    </script>
+    <iframe id="iframe-download" name="iframe-download" style="display:none"></iframe>
+
+</body>
+</html>
+

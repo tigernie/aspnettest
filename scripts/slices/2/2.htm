@@ -1,0 +1,34 @@
+﻿<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="list">
+    <caption style="margin-top:10px" id="fcap">
+        题数共：<strong id="AllNumID">0</strong>
+        &nbsp; 容易题共：<strong id="EasyNumID">0</strong>
+        &nbsp; 中等题共：<strong id="MiddleNumID">0</strong>
+        &nbsp; 难题题共：<strong id="DiffNumID">0</strong>
+        &nbsp; 总分：<input type="hidden" name="TotalScore" value="0" /><strong id="TotalScore" style="color: red">0</strong>
+    </caption>
+    <thead>
+        <tr>
+            <th width="120">题型</th>
+            <th colspan="2">容易</th>
+            <th colspan="2">中等</th>
+            <th colspan="2">难题</th>
+            <th width="120">每题分数</th>
+        </tr>
+    </thead>
+    <tbody id="fark">
+    </tbody>
+</table>
+<script type="text/javascript">
+    function calc(fark) {
+        var values = [0, 0, 0, 0, 0];
+        $('#fark tr').each(function (i, tr) {
+            var inputs = $(tr).find('select,input').map(function () { return parseInt('0' + this.value, 10) }).toArray();
+            values[0] += inputs[0] + inputs[1] + inputs[2];
+            values[1] += inputs[0];
+            values[2] += inputs[1];
+            values[3] += inputs[2];
+            values[4] += (inputs[0] + inputs[1] + inputs[2]) * inputs[3];
+        });
+        $('#fcap strong').each(function (i, item) { item.innerHTML = values[i] });
+    }
+</script>

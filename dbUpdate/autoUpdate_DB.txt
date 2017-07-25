@@ -1,0 +1,14 @@
+2014-05-23 00:16:33未能找到路径“Z:\工作\项目\信息技术考试系统_dotNet\项目\tools\自动更新（数据库自动更新部分）\autoUpdate_DB\autoUpdate_DB\bin\Release\dbInfo”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   在 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   在 System.IO.DirectoryInfo.InternalGetFiles(String searchPattern, SearchOption searchOption)
+   在 Updater.UpdateBase.GetStructFile(String workDirectory)
+   在 Updater.UpdateCommon.GetSQLLocalAndDestinationStruct(String destinationStructDirectory, String connectionString, SQLStruct& localStruct, SQLStruct& destinationStruct)
+   在 Updater.UpdateCommon.Update(String connectionString, String currentVersion, String newVersion, String dbStructDirectory, String postExecuteScriptsDirectory, String preExecuteScriptsDirectory, IEnumerable`1 alwaysExecuteScripts)
+   在 autoUpdate_DB.Program.Main(String[] args)
+
+
+
+
+

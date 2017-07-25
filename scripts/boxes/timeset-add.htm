@@ -1,0 +1,23 @@
+﻿<form action="javascript:;" method="get">
+    <dl>
+        <dt>考试日期：</dt>
+        <dd><input type="text" name="date" value="" class="Wdate" onfocus="WdatePicker({minDate:ex.start,maxDate:ex.end})" /></dd>
+    </dl>
+    <dl>
+        <dt>开始时间：</dt>
+        <dd><input type="text" name="start" value="" class="Wdate" onfocus="WdatePicker({
+            dateFmt:'HH:mm',
+            onpicked:function(){
+                with($dp.$D(this,{m:ex.length}))$('#end').val(H+':'+m)
+            }
+        })" /></dd>
+    </dl>
+    <dl id="closeTime">
+        <dt>结束时间：</dt>
+        <dd><input type="text" id="end" class="Wdate" disabled="disabled" /></dd>
+    </dl>
+    <dl id="intervalTime" class="display:none">
+        <dt>间隔时间：</dt>
+        <dd><input type="text" id="interval" name="interval" class="" /></dd>
+    </dl>
+</form>

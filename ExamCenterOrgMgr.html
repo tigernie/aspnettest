@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>报名管理</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="script.ashx?teacher" type="text/javascript"></script>
+    <script src="scripts/lib/teacher.ui.js"></script>
+    <script type="text/javascript" src="scripts/PopWindow/gzy.popup.js"></script>
+
+    <link href="scripts/easyui/themes/metro/easyui.css" rel="stylesheet" />
+    <!--<link href="scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />-->
+    <link href="scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <script src="scripts/easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+    <!--[if lte ie 7]>
+    <style type="text/css">
+    .badie { padding:4px 4px 4px 24px; font-size:14px; background: #ffffe0 url("images/warning.png") 4px center no-repeat; border-bottom:2px solid silver; }
+    body { background-position-y: 24px; }
+    </style>
+    <div class="badie">为了保证各项功能的正常使用，请使用IE8或以上版本的IE浏览器。</div>
+    <![endif]-->
+    <div class="body">
+        <div id="msg_checkOnline" style=" display:none;">
+        </div>
+        <div class="head baoming">
+            <p>
+                <a href="javascript:;" class="user">超级管理员</a>
+                <a href="teacher.htm" class="home">返回首页</a>
+                <a href="javascript:;" class="setting">系统管理</a>
+                <a href="javascript:;" class="exit">注销</a>
+            </p>
+        </div>
+        <div class="wide">
+            <div style="margin-top:10px; margin-bottom:10px;">
+                <button id="addExamcenterOrg">添加考点</button>
+            </div>
+            <table id="examCentersTable" class="easyui-datagrid" title="考点信息" style="width:970px;height:450px"
+                   data-options="rownumbers:true,singleSelect:true,isajaxEx:true,collapsible:true,url:'company.asmx/GetExamCenterOrgs',pagination:true,method:'get'">
+                <thead>
+                    <tr>
+                        <!--<th data-options="field:'ck',checkbox:true">选择</th>-->
+                        <th data-options="field:'name',width:160,align:'left'">考点名称</th>
+                        <th data-options="field:'code',width:160,align:'center'">考点编码</th>
+                        <th data-options="field:'roomsCount',width:'50',align:'center'">考场数</th>
+                        <th data-options="field:'computersCount',width:'60',align:'center'">总机位数</th>
+                        <th data-options="field:'admin',width:'100',align:'center'">考点管理员</th>
+                        <th data-options="field:'phone',width:'100',align:'left'">电话</th>
+                        <th data-options="field:'email',width:'140',align:'left'">Email</th>
+                        <th data-options="field:'qq',align:'center'">QQ</th>
+                        <th data-options="field:'id',width:'100',align:'center',formatter:opeartionFomatters">操作</th>
+                        <!--<th data-options="field:'status',align:'center'">操作</th>-->
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div id="dd"></div>
+
+    <script>
+
+        function opeartionFomatters(value, row, index) {
+            return '<a href="javascript:deleteExamcenterOrg(\'' + row.id + '\',\''+row.name+'\')">删除</a>';
+        }
+
+        function deleteExamcenterOrg(id,name) {
+            if (confirm('您确定要删除' + name + '吗？')) {
+                $.post('/company.asmx/DeleteExamCenterOrg', { id: id }, function (result) {
+                    if (result.ok) {
+                        alert('删除成功！');
+                        $('#examCentersTable').datagrid('reload');
+                    }
+                    else
+                        alert(result.msg);
+
+                });
+            }
+        }
+
+
+        $(function () {
+            $('#addExamcenterOrg').click(function () {
+                openEditDialog();
+            });
+
+            $('#examCentersTable').datagrid({
+                onDblClickRow: function (rowIndex, rowData) {
+                    openEditDialog(rowData.id);
+                }
+            });
+
+
+        });
+
+        var schoolId;
+        function openEditDialog(id) {
+            schoolId = id;
+            $('#dd').dialog({
+                title: '添加考点',
+                width: 800,
+                height: 500,
+                closed: false,
+                cache: false,
+                href: '/dialog/createExamcenterOrg.html',
+                modal: true,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        try {
+                            var info = getExamCenterOrgInfo();
+                            var json = JSON.stringify(info);
+                            $.post('/company.asmx/SaveExamCenterOrg', { examCenterOrg: json }, function (result) {
+                                if (result.ok) {
+                                    alert((info.id ? '修改' : '添加') + '成功！');
+                                    $('#dd').dialog('close');
+                                    $('#examCentersTable').datagrid('reload');
+                                }
+                                else
+                                    alert(result.msg);
+                            });
+                        }
+                        catch (e) {
+                            alert(e.message);
+                        }
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#dd').dialog('close');
+
+                    }
+                }]
+            });
+        }
+
+
+    </script>
+
+</body>
+</html>
